@@ -1,0 +1,47 @@
+---
+import Base from '@/layouts/Base.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import { useTranslations } from '@/i18n';
+
+const lang = 'de' as const;
+const t = useTranslations(lang);
+---
+
+<Base lang={lang} title={t('privacy.title')}>
+  <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-12 pb-20">
+    <Breadcrumb crumbs={[
+      { label: t('breadcrumb.home'), href: '/de/' },
+      { label: t('privacy.breadcrumb') },
+    ]} />
+
+    <h1 class="text-3xl font-bold text-[#0A2647] mb-6">{t('privacy.title')}</h1>
+    <p class="text-slate-400 text-sm mb-8">{t('privacy.lastUpdated')}</p>
+    <div class="prose-content">
+      
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('privacy.responsibleTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('privacy.responsibleText')}</p>
+        </div>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('privacy.dataTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('privacy.dataText')}</p>
+        </div>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('privacy.purposeTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('privacy.purposeText')}</p>
+        </div>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('privacy.storageTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('privacy.storageText')}</p>
+        </div>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('privacy.rightsTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('privacy.rightsText')}</p>
+        </div>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('privacy.cookiesTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('privacy.cookiesText')}</p>
+        </div>
+    </div>
+  </div>
+</Base>

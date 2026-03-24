@@ -1,0 +1,7 @@
+---
+export const prerender = false;
+
+const lang = Astro.preferredLocale ?? 'de';
+const target = lang === 'en' ? '/en/' : '/de/';
+return Astro.redirect(target, 302);
+---

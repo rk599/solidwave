@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position:  200% center; }
+}
+
+.animate-fade-up   { animation: fadeUp 0.65s ease both; }
+.animate-fade-in   { animation: fadeIn 0.5s ease both; }
+.animate-float     { animation: float 4s ease-in-out infinite; }
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-400 { animation-delay: 0.4s; }
+.delay-500 { animation-delay: 0.5s; }
+
+@theme {
+  /* Brand colours */
+  --color-navy:        #0A2647;
+  --color-navy-light:  #0e3568;
+  --color-navy-dark:   #061830;
+  --color-teal:        #4A7C8C;
+  --color-teal-light:  #5d99ab;
+  --color-teal-dark:   #3a6272;
+
+  /* Neutrals */
+  --color-slate-50:    #f8fafc;
+  --color-slate-100:   #f1f5f9;
+  --color-slate-200:   #e2e8f0;
+  --color-slate-300:   #cbd5e1;
+  --color-slate-500:   #64748b;
+  --color-slate-600:   #475569;
+  --color-slate-700:   #334155;
+  --color-slate-800:   #1e293b;
+  --color-slate-900:   #0f172a;
+
+  /* Typography */
+  --font-sans: "Inter Variable", Inter, system-ui, sans-serif;
+
+  /* Spacing scale */
+  --spacing-18: 4.5rem;
+  --spacing-22: 5.5rem;
+  --spacing-88: 22rem;
+  --spacing-96: 24rem;
+  --spacing-128: 32rem;
+
+  /* Shadows */
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.07), 0 1px 2px -1px rgb(0 0 0 / 0.07);
+  --shadow-card-hover: 0 10px 30px -8px rgb(10 38 71 / 0.12), 0 4px 6px -4px rgb(10 38 71 / 0.06);
+  --shadow-navy: 0 10px 30px -8px rgb(10 38 71 / 0.35);
+}
+
+/* Base resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-slate-800);
+  background: #fff;
+}
+
+/* Inter Variable font */
+@font-face {
+  font-family: "Inter Variable";
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/InterVariable.woff2") format("woff2");
+}
+
+/* Custom utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .container-narrow {
+    max-width: 56rem;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+  }
+}
+
+/* Prose-like styles for legal/content pages */
+.prose-content h2 {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-top: 2.5rem;
+  margin-bottom: 0.875rem;
+}
+
+.prose-content h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-slate-800);
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.prose-content p {
+  color: var(--color-slate-600);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.prose-content ul {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.prose-content ul li {
+  color: var(--color-slate-600);
+  line-height: 1.75;
+  margin-bottom: 0.25rem;
+}
+
+.prose-content a {
+  color: var(--color-teal);
+  text-decoration: underline;
+}

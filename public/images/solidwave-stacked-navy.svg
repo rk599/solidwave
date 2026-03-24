@@ -1,0 +1,9 @@
+<svg width="400" height="500" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon -->
+  <path d="M200 50 L280 85 C280 85 286 150 280 190 C274 230 240 268 200 285 C160 268 126 230 120 190 C114 150 120 85 120 85 L200 50Z" fill="none" stroke="#0A2647" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M150 120 Q175 107 200 120 T250 120" fill="none" stroke="#0A2647" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M145 165 Q175 152 200 165 T255 165" fill="none" stroke="#0A2647" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M150 210 Q175 197 200 210 T250 210" fill="none" stroke="#0A2647" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Text -->
+  <text x="200" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="52" font-weight="400" fill="#0A2647" letter-spacing="8" text-anchor="middle">SOLIDWAVE</text>
+</svg>

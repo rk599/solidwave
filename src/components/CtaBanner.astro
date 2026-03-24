@@ -1,0 +1,26 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  buttonLabel: string;
+  buttonHref: string;
+}
+
+const { title, description, buttonLabel, buttonHref } = Astro.props;
+---
+
+<section class="bg-[#0A2647] text-white">
+  <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 py-16 text-center">
+    <h2 class="text-2xl sm:text-3xl font-bold mb-4">{title}</h2>
+    <p class="text-slate-300 text-lg mb-8 leading-relaxed">{description}</p>
+    <a
+      href={buttonHref}
+      class="inline-flex items-center gap-2 bg-[#4A7C8C] hover:bg-[#5d99ab] text-white font-semibold px-7 py-3.5 rounded-lg transition-colors duration-150 shadow-lg"
+    >
+      {buttonLabel}
+      <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+      </svg>
+    </a>
+  </div>
+</section>

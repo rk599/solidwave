@@ -1,0 +1,30 @@
+---
+import Base from '@/layouts/Base.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import CtaBanner from '@/components/CtaBanner.astro';
+import { useTranslations } from '@/i18n';
+
+const lang = 'en' as const;
+const t = useTranslations(lang);
+---
+
+<Base lang={lang} title={t('property.autoTitle')}>
+  <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-12 pb-20">
+    <Breadcrumb crumbs={[
+      { label: t('breadcrumb.home'), href: '/en/' },
+      { label: t('property.breadcrumb'), href: '/en/property-insurance/' },
+      { label: t('property.autoTitle') },
+    ]} />
+
+    <h1 class="text-3xl sm:text-4xl font-bold text-[#0A2647] mb-4">{t('property.autoTitle')}</h1>
+    <p class="text-slate-500 text-lg leading-relaxed mb-8">{t('property.autoDesc')}</p>
+    <p class="text-slate-600 leading-relaxed">{t('property.intro')}</p>
+  </div>
+
+  <CtaBanner
+    title={t('cta.readyTitle')}
+    description={t('cta.readyDesc')}
+    buttonLabel={t('cta.readyBtn')}
+    buttonHref="/en/contact/"
+  />
+</Base>

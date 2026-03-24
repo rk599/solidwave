@@ -1,0 +1,334 @@
+---
+import Base from '@/layouts/Base.astro';
+import { useTranslations } from '@/i18n';
+
+const lang = 'de' as const;
+const t = useTranslations(lang);
+---
+
+<Base lang={lang} title="Solidwave Group SA – Ihr unabhängiger Versicherungsbroker in der Schweiz">
+
+  <!-- ═══ HERO ═══ -->
+  <section class="relative overflow-hidden bg-[#0A2647] text-white min-h-[92vh] flex items-center">
+    <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div class="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[#4A7C8C]/10 blur-3xl"></div>
+      <div class="absolute -bottom-20 -left-20 w-[400px] h-[400px] rounded-full bg-[#4A7C8C]/08 blur-2xl"></div>
+      <svg class="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
+        <defs><pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+          <path d="M 60 0 L 0 0 0 60" fill="none" stroke="white" stroke-width="1"/>
+        </pattern></defs>
+        <rect width="100%" height="100%" fill="url(#grid)"/>
+      </svg>
+    </div>
+
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32 w-full">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="inline-flex items-center gap-2 bg-[#4A7C8C]/20 border border-[#4A7C8C]/30 rounded-full px-4 py-1.5 text-sm text-[#7eb8c8] font-medium mb-6">
+            <span class="w-2 h-2 rounded-full bg-[#4A7C8C] animate-pulse"></span>
+            FINMA-registrierter Versicherungsbroker · Zug, Schweiz
+          </div>
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-6">
+            Versicherungen,<br/>
+            <span class="text-[#4A7C8C]">die zu Ihrem</span><br/>
+            Leben passen
+          </h1>
+          <p class="text-slate-300 text-xl leading-relaxed mb-10 max-w-lg">
+            Wir vergleichen für Sie unabhängig und finden die beste Lösung – kostenlos und persönlich.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="/de/kontakt/" class="inline-flex items-center gap-2.5 bg-[#4A7C8C] hover:bg-[#5d99ab] text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-[#4A7C8C]/25 hover:-translate-y-0.5">
+              Kostenlose Beratung
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            </a>
+            <a href="#services" class="inline-flex items-center gap-2.5 border border-white/20 hover:border-white/50 hover:bg-white/5 text-white font-medium px-8 py-4 rounded-xl transition-all duration-200">
+              Unsere Dienstleistungen
+              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+            </a>
+          </div>
+          <div class="mt-12 flex flex-wrap items-center gap-6 text-sm text-slate-400">
+            <div class="flex items-center gap-2">
+              <svg class="h-5 w-5 text-[#4A7C8C]" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+              <span>100% unabhängig</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="h-5 w-5 text-[#4A7C8C]" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25H9m6 3H9m3 6-3-3h1.5a3 3 0 1 0 0-6M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+              <span>Beratung kostenlos</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="h-5 w-5 text-[#4A7C8C]" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
+              <span>50+ Versicherungspartner</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right card -->
+        <div class="hidden lg:block relative">
+          <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-2xl">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-10 h-10 rounded-xl bg-[#4A7C8C] flex items-center justify-center">
+                <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+              </div>
+              <div>
+                <p class="font-semibold text-white">Ihr persönlicher Schutz</p>
+                <p class="text-slate-400 text-sm">Massgeschneidert für Sie</p>
+              </div>
+            </div>
+            {[
+              { label: 'Krankenkasse', icon: '🏥', sub: 'Grundversicherung & Zusatz' },
+              { label: 'Vorsorge', icon: '💰', sub: 'Säule 3a · 3b · Lebensversicherung' },
+              { label: 'Sachversicherung', icon: '🏠', sub: 'Auto · Hausrat · Haftpflicht' },
+            ].map(item => (
+              <div class="flex items-center gap-4 py-3.5 border-t border-white/10">
+                <span class="text-2xl">{item.icon}</span>
+                <div>
+                  <p class="text-white font-medium text-sm">{item.label}</p>
+                  <p class="text-slate-400 text-xs">{item.sub}</p>
+                </div>
+                <svg class="ml-auto h-4 w-4 text-[#4A7C8C]" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+              </div>
+            ))}
+          </div>
+          <div class="absolute -bottom-5 -left-6 bg-white rounded-2xl shadow-2xl p-4 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-lg">💡</div>
+            <div>
+              <p class="text-xs text-slate-500">Mögliche Ersparnis</p>
+              <p class="font-bold text-slate-800 text-sm">bis CHF 800/Jahr</p>
+            </div>
+          </div>
+          <div class="absolute -top-4 -right-4 bg-[#4A7C8C] rounded-2xl shadow-xl p-4 text-white text-center">
+            <p class="text-3xl font-bold">50+</p>
+            <p class="text-xs text-[#c5e0e8] mt-0.5">Partner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="absolute bottom-0 left-0 right-0" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
+        <path d="M0 60L48 50C96 40 192 20 288 15C384 10 480 20 576 25C672 30 768 30 864 25C960 20 1056 10 1152 10C1248 10 1344 20 1392 25L1440 30V60H0Z" fill="#f8fafc"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══ STATS ═══ -->
+  <section class="bg-slate-50 py-10 border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        {[
+          { val: '100%', label: 'Unabhängig', icon: '🛡️' },
+          { val: '50+', label: 'Versicherungspartner', icon: '🤝' },
+          { val: 'CHF 0', label: 'Kosten für Sie', icon: '✅' },
+          { val: 'Zug', label: 'Hauptsitz Schweiz', icon: '🇨🇭' },
+        ].map(s => (
+          <div class="flex flex-col items-center gap-1">
+            <span class="text-2xl mb-1">{s.icon}</span>
+            <p class="text-3xl font-bold text-[#0A2647]">{s.val}</p>
+            <p class="text-sm text-slate-500">{s.label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SERVICES ═══ -->
+  <section id="services" class="py-24 bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="inline-block bg-[#0A2647]/8 text-[#0A2647] text-sm font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">Unsere Dienstleistungen</span>
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#0A2647] mb-4">Drei Bereiche, ein Ziel</h2>
+        <p class="text-slate-500 text-xl max-w-xl mx-auto">Ihr optimaler Versicherungsschutz – unabhängig, kostenlos und persönlich.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <a href="/de/krankenkasse/" class="group relative bg-white rounded-2xl border border-slate-200 p-8 shadow-sm hover:shadow-xl hover:border-[#4A7C8C]/30 transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#4A7C8C]/8 to-transparent rounded-bl-full"></div>
+          <div class="w-14 h-14 rounded-2xl bg-[#0A2647] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-200">
+            <svg class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-[#0A2647] mb-3 group-hover:text-[#4A7C8C] transition-colors">Krankenkasse</h3>
+          <p class="text-slate-500 leading-relaxed mb-6">Grundversicherung und Zusatzversicherung im Vergleich. Wir finden die Kasse, die zu Ihren Bedürfnissen passt.</p>
+          <ul class="space-y-2 mb-6">
+            {['Grundversicherung', 'Zusatzversicherung', 'Prämienvergleich'].map(item => (
+              <li class="flex items-center gap-2 text-sm text-slate-600">
+                <svg class="h-4 w-4 text-[#4A7C8C] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <div class="flex items-center gap-1 text-[#4A7C8C] font-semibold text-sm group-hover:gap-2 transition-all">
+            Mehr erfahren <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </div>
+        </a>
+
+        <a href="/de/vorsorge/" class="group relative bg-[#0A2647] rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 overflow-hidden text-white">
+          <div class="absolute top-0 right-0 w-40 h-40 bg-[#4A7C8C]/15 rounded-bl-full"></div>
+          <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-tr-full"></div>
+          <div class="relative">
+            <div class="w-14 h-14 rounded-2xl bg-[#4A7C8C] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-200">
+              <svg class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/></svg>
+            </div>
+            <span class="inline-block bg-[#4A7C8C]/30 text-[#7eb8c8] text-xs font-semibold px-3 py-1 rounded-full mb-3">Empfohlen</span>
+            <h3 class="text-xl font-bold text-white mb-3">Vorsorge</h3>
+            <p class="text-slate-300 leading-relaxed mb-6">Säule 3a, Säule 3b, Lebensversicherung und mehr. Wir planen Ihre finanzielle Zukunft.</p>
+            <ul class="space-y-2 mb-6">
+              {['Säule 3a & 3b', 'Lebensversicherung', 'Risikoversicherung', 'Kinderpläne'].map(item => (
+                <li class="flex items-center gap-2 text-sm text-slate-300">
+                  <svg class="h-4 w-4 text-[#4A7C8C] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            <div class="flex items-center gap-1 text-[#4A7C8C] font-semibold text-sm group-hover:gap-2 transition-all">
+              Mehr erfahren <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            </div>
+          </div>
+        </a>
+
+        <a href="/de/sachversicherung/" class="group relative bg-white rounded-2xl border border-slate-200 p-8 shadow-sm hover:shadow-xl hover:border-[#4A7C8C]/30 transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#0A2647]/5 to-transparent rounded-bl-full"></div>
+          <div class="w-14 h-14 rounded-2xl bg-[#0A2647] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-200">
+            <svg class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+          </div>
+          <h3 class="text-xl font-bold text-[#0A2647] mb-3 group-hover:text-[#4A7C8C] transition-colors">Sachversicherung</h3>
+          <p class="text-slate-500 leading-relaxed mb-6">Auto, Hausrat, Haftpflicht und Rechtsschutz. Rundum geschützt im Alltag.</p>
+          <ul class="space-y-2 mb-6">
+            {['Autoversicherung', 'Hausratversicherung', 'Haftpflicht & Rechtsschutz'].map(item => (
+              <li class="flex items-center gap-2 text-sm text-slate-600">
+                <svg class="h-4 w-4 text-[#4A7C8C] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                {item}
+              </li>
+            ))}
+          </ul>
+          <div class="flex items-center gap-1 text-[#4A7C8C] font-semibold text-sm group-hover:gap-2 transition-all">
+            Mehr erfahren <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WHY US ═══ -->
+  <section class="py-24 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div class="relative">
+          <div class="bg-[#0A2647] rounded-3xl p-10 text-white">
+            <h3 class="text-2xl font-bold mb-8">Was uns auszeichnet</h3>
+            <div class="space-y-6">
+              {[
+                { pct: '100%', label: 'Unabhängigkeit von Versicherern', w: '100%', color: '#4A7C8C' },
+                { pct: '98%', label: 'Kundenzufriedenheit', w: '98%', color: '#5d99ab' },
+                { pct: '50+', label: 'Versicherungspartner im Vergleich', w: '85%', color: '#7eb8c8' },
+              ].map(bar => (
+                <div>
+                  <div class="flex justify-between text-sm mb-2">
+                    <span class="text-slate-300">{bar.label}</span>
+                    <span class="font-bold text-white">{bar.pct}</span>
+                  </div>
+                  <div class="h-2 bg-white/10 rounded-full overflow-hidden">
+                    <div class="h-full rounded-full" style={`width:${bar.w};background:${bar.color}`}></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div class="mt-10 flex items-center gap-3 bg-white/10 rounded-xl p-4">
+              <span class="text-3xl">🇨🇭</span>
+              <div>
+                <p class="font-semibold">FINMA-registriert</p>
+                <p class="text-slate-400 text-sm">Zugelassener unabhängiger Versicherungsvermittler</p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute -bottom-5 -right-5 bg-white border border-slate-200 rounded-2xl shadow-xl p-5 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-xl">✅</div>
+            <div>
+              <p class="font-bold text-slate-800">Kostenlos für Sie</p>
+              <p class="text-sm text-slate-500">Vergütung durch Versicherer</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <span class="inline-block bg-[#0A2647]/8 text-[#0A2647] text-sm font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">Warum Solidwave?</span>
+          <h2 class="text-4xl font-bold text-[#0A2647] mb-4">Unabhängige Beratung.<br/>Persönlicher Service.</h2>
+          <p class="text-slate-500 text-lg mb-10 leading-relaxed">Wir stehen für Transparenz und arbeiten ausschliesslich in Ihrem Interesse – ohne Bindung an eine Versicherungsgesellschaft.</p>
+          <div class="space-y-6">
+            {[
+              { icon: 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z', title: 'Unabhängig', desc: 'Wir sind an keine Versicherungsgesellschaft gebunden und beraten ausschliesslich in Ihrem Interesse.' },
+              { icon: 'M15 8.25H9m6 3H9m3 6-3-3h1.5a3 3 0 1 0 0-6M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z', title: 'Kostenfrei', desc: 'Unsere Beratung ist für Sie komplett kostenlos. Wir werden von den Versicherern vergütet.' },
+              { icon: 'M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z', title: 'Persönlich', desc: 'Kein Callcenter, keine Warteschleifen. Sie haben immer einen festen Ansprechpartner.' },
+              { icon: 'M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605', title: 'Transparent', desc: 'Offene Kommunikation über Prämien, Leistungen und unsere Vergütung gemäss VAG Art. 45.' },
+            ].map(item => (
+              <div class="flex gap-4">
+                <div class="w-12 h-12 rounded-xl bg-[#4A7C8C]/10 flex items-center justify-center flex-shrink-0">
+                  <svg class="h-6 w-6 text-[#4A7C8C]" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d={item.icon}/>
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-[#0A2647] mb-1">{item.title}</h4>
+                  <p class="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ HOW IT WORKS ═══ -->
+  <section class="py-24 bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <span class="inline-block bg-[#0A2647]/8 text-[#0A2647] text-sm font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">So funktioniert es</span>
+        <h2 class="text-4xl sm:text-5xl font-bold text-[#0A2647] mb-4">In 3 Schritten zur optimalen Lösung</h2>
+        <p class="text-slate-500 text-xl">Einfach, schnell und ohne Aufwand für Sie.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {[
+          { num: '01', title: 'Beratungsgespräch', desc: 'Wir analysieren gemeinsam Ihre aktuelle Situation und klären Ihre Bedürfnisse – kostenlos und unverbindlich.', icon: 'M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V20.25a.75.75 0 0 0 1.28.53l3.58-3.58A48.22 48.22 0 0 0 11.25 17c2.08 0 4.14-.133 6.16-.39' },
+          { num: '02', title: 'Vergleich & Empfehlung', desc: 'Wir vergleichen Angebote von über 50 Anbietern und präsentieren die beste und günstigste Lösung für Sie.', icon: 'M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z' },
+          { num: '03', title: 'Umsetzung & Betreuung', desc: 'Wir kümmern uns um den Wechsel und stehen Ihnen auch danach als persönlicher Ansprechpartner zur Seite.', icon: 'M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z' },
+        ].map(step => (
+          <div class="relative bg-white rounded-2xl border border-slate-200 p-8 shadow-sm text-center hover:shadow-lg transition-shadow">
+            <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#0A2647] mb-6 mx-auto">
+              <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d={step.icon}/></svg>
+            </div>
+            <div class="absolute top-6 right-6 text-6xl font-black text-slate-100 select-none leading-none">{step.num}</div>
+            <h3 class="text-lg font-bold text-[#0A2647] mb-3">{step.title}</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">{step.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA ═══ -->
+  <section class="relative overflow-hidden bg-gradient-to-r from-[#0A2647] to-[#0e3568] text-white py-20">
+    <div class="absolute inset-0 opacity-5" aria-hidden="true">
+      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+        <defs><pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="white"/></pattern></defs>
+        <rect width="100%" height="100%" fill="url(#dots)"/>
+      </svg>
+    </div>
+    <div class="relative mx-auto max-w-3xl px-4 sm:px-6 text-center">
+      <span class="text-4xl mb-4 block">🤝</span>
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4">Bereit für eine unabhängige Beratung?</h2>
+      <p class="text-slate-300 text-lg mb-8 leading-relaxed">Kontaktieren Sie uns für eine kostenlose und unverbindliche Erstberatung. Gemeinsam finden wir die optimale Lösung für Ihre Versicherungsbedürfnisse.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/de/kontakt/" class="inline-flex items-center gap-2 bg-[#4A7C8C] hover:bg-[#5d99ab] text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:-translate-y-0.5">
+          Jetzt Kontakt aufnehmen
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </a>
+        <a href="mailto:mm@solidwave.ch" class="inline-flex items-center gap-2 border border-white/30 hover:border-white/60 text-white font-medium px-8 py-4 rounded-xl transition-all duration-200">
+          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+          mm@solidwave.ch
+        </a>
+      </div>
+    </div>
+  </section>
+
+</Base>

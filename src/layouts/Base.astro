@@ -1,0 +1,52 @@
+---
+import type { Lang } from '@/i18n';
+import { useTranslations } from '@/i18n';
+import Header from '@/components/Header.astro';
+import Footer from '@/components/Footer.astro';
+import '@/styles/global.css';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description?: string;
+  canonicalUrl?: string;
+}
+
+const { lang, title, description, canonicalUrl } = Astro.props;
+const t = useTranslations(lang);
+const siteName = t('meta.siteName');
+const siteDesc = description ?? t('meta.siteDesc');
+const fullTitle = title === siteName ? title : `${title} – ${siteName}`;
+---
+
+<!doctype html>
+<html lang={lang} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={siteDesc} />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={siteDesc} />
+    {canonicalUrl && <meta property="og:url" content={canonicalUrl} />}
+    <meta property="og:site_name" content={siteName} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Canonical -->
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+
+    <title>{fullTitle}</title>
+  </head>
+  <body class="flex min-h-screen flex-col">
+    <Header lang={lang} currentPath={Astro.url.pathname} />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>

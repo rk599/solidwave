@@ -1,0 +1,43 @@
+---
+import Base from '@/layouts/Base.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import { useTranslations } from '@/i18n';
+
+const lang = 'de' as const;
+const t = useTranslations(lang);
+---
+
+<Base lang={lang} title={t('terms.title')}>
+  <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-12 pb-20">
+    <Breadcrumb crumbs={[
+      { label: t('breadcrumb.home'), href: '/de/' },
+      { label: t('terms.breadcrumb') },
+    ]} />
+
+    <h1 class="text-3xl font-bold text-[#0A2647] mb-6">{t('terms.title')}</h1>
+    <p class="text-slate-400 text-sm mb-8">{t('terms.lastUpdated')}</p>
+    <div class="prose-content">
+      
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('terms.generalTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('terms.generalText')}</p>
+        </div>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('terms.contentTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('terms.contentText')}</p>
+        </div>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('terms.liabilityTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('terms.liabilityText')}</p>
+        </div>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('terms.intellectualTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('terms.intellectualText')}</p>
+        </div>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('terms.lawTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('terms.lawText')}</p>
+        </div>
+    </div>
+  </div>
+</Base>

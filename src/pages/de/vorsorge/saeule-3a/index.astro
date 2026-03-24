@@ -1,0 +1,30 @@
+---
+import Base from '@/layouts/Base.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import CtaBanner from '@/components/CtaBanner.astro';
+import { useTranslations } from '@/i18n';
+
+const lang = 'de' as const;
+const t = useTranslations(lang);
+---
+
+<Base lang={lang} title={t('pension.p3aTitle')}>
+  <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-12 pb-20">
+    <Breadcrumb crumbs={[
+      { label: t('breadcrumb.home'), href: '/de/' },
+      { label: t('pension.breadcrumb'), href: '/de/vorsorge/' },
+      { label: t('pension.p3aTitle') },
+    ]} />
+
+    <h1 class="text-3xl sm:text-4xl font-bold text-[#0A2647] mb-4">{t('pension.p3aTitle')}</h1>
+    <p class="text-slate-500 text-lg leading-relaxed mb-8">{t('pension.p3aDesc')}</p>
+    <p class="text-slate-600 leading-relaxed">{t('pension.intro')}</p>
+  </div>
+
+  <CtaBanner
+    title={t('cta.readyTitle')}
+    description={t('cta.readyDesc')}
+    buttonLabel={t('cta.readyBtn')}
+    buttonHref="/de/kontakt/"
+  />
+</Base>

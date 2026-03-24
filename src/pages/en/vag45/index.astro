@@ -1,0 +1,43 @@
+---
+import Base from '@/layouts/Base.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import { useTranslations } from '@/i18n';
+
+const lang = 'en' as const;
+const t = useTranslations(lang);
+---
+
+<Base lang={lang} title={t('vag45.title')}>
+  <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8 pt-12 pb-20">
+    <Breadcrumb crumbs={[
+      { label: t('breadcrumb.home'), href: '/en/' },
+      { label: t('vag45.breadcrumb') },
+    ]} />
+
+    <h1 class="text-3xl font-bold text-[#0A2647] mb-6">{t('vag45.title')}</h1>
+    <p class="text-slate-400 text-sm mb-8">{t('vag45.lastUpdated')}</p>
+    <div class="prose-content">
+      
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('vag45.legalTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('vag45.legalText')}</p>
+        </div>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('vag45.statusTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('vag45.statusText')}</p>
+        </div>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('vag45.compensationTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('vag45.compensationText')}</p>
+        </div>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('vag45.conflictsTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('vag45.conflictsText')}</p>
+        </div>
+        <div class="mb-8">
+          <h2 class="text-xl font-semibold text-[#0A2647] mb-3">{t('vag45.rightsTitle')}</h2>
+          <p class="text-slate-600 leading-relaxed whitespace-pre-line">{t('vag45.rightsText')}</p>
+        </div>
+    </div>
+  </div>
+</Base>

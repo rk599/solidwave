@@ -1,0 +1,50 @@
+---
+import Base from '@/layouts/Base.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import ServiceCard from '@/components/ServiceCard.astro';
+import CtaBanner from '@/components/CtaBanner.astro';
+import { useTranslations } from '@/i18n';
+
+const lang = 'en' as const;
+const t = useTranslations(lang);
+---
+
+<Base lang={lang} title={t('property.heroTitle')}>
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-20">
+    <Breadcrumb crumbs={[
+      { label: t('breadcrumb.home'), href: '/en/' },
+      { label: t('property.breadcrumb') },
+    ]} />
+
+    <div class="max-w-3xl mb-12">
+      <h1 class="text-3xl sm:text-4xl font-bold text-[#0A2647] mb-4">{t('property.heroTitle')}</h1>
+      <p class="text-slate-500 text-lg leading-relaxed">{t('property.heroSub')}</p>
+    </div>
+
+    <p class="text-slate-600 leading-relaxed mb-10 max-w-3xl">{t('property.intro')}</p>
+
+    <div class="mb-12 max-w-3xl">
+      <h2 class="text-xl font-semibold text-[#0A2647] mb-5">{t('property.whyTitle')}</h2>
+      <ul class="space-y-2.5">
+        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold mt-0.5">✓</span>{t("property.why1")}</li>
+        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold mt-0.5">✓</span>{t("property.why2")}</li>
+        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold mt-0.5">✓</span>{t("property.why3")}</li>
+        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold mt-0.5">✓</span>{t("property.why4")}</li>
+      </ul>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <ServiceCard title={t('property.autoTitle')} description={t('property.autoDesc')} href="/en/property-insurance/auto/" />
+      <ServiceCard title={t('property.householdTitle')} description={t('property.householdDesc')} href="/en/property-insurance/household/" />
+      <ServiceCard title={t('property.liabilityTitle')} description={t('property.liabilityDesc')} href="/en/property-insurance/liability/" />
+      <ServiceCard title={t('property.legalTitle')} description={t('property.legalDesc')} href="/en/property-insurance/legal-protection/" />
+    </div>
+  </div>
+
+  <CtaBanner
+    title={t('cta.readyTitle')}
+    description={t('cta.readyDesc')}
+    buttonLabel={t('cta.readyBtn')}
+    buttonHref="/en/contact/"
+  />
+</Base>
