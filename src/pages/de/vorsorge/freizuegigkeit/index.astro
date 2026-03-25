@@ -2,7 +2,7 @@
 import Base from '@/layouts/Base.astro';
 import Breadcrumb from '@/components/Breadcrumb.astro';
 import CtaBanner from '@/components/CtaBanner.astro';
-const lang = 'de';
+const lang = 'de' as const;
 ---
 <Base lang={lang} title="Freizuegigkeitskonten - Solidwave Group AG">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-20">
