@@ -1,23 +1,72 @@
 ---
 import Base from '@/layouts/Base.astro';
 import Breadcrumb from '@/components/Breadcrumb.astro';
+import ServiceCard from '@/components/ServiceCard.astro';
 import CtaBanner from '@/components/CtaBanner.astro';
+import { useTranslations } from '@/i18n';
+
 const lang = 'de' as const;
+const t = useTranslations(lang);
 ---
-<Base lang={lang} title="Freizuegigkeitskonten - Solidwave Group AG">
+
+<Base lang={lang} title="Freizügigkeitskonten – Solidwave Group AG">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-20">
-    <Breadcrumb crumbs={[{label:'Startseite',href:'/de/'},{label:'Vorsorge',href:'/de/vorsorge/'},{label:'Freizuegigkeitskonten'}]} />
-    <div class="max-w-3xl">
-      <h1 class="text-3xl sm:text-4xl font-bold text-[#0A2647] mb-4">Freizügigkeitskonten</h1>
-      <p class="text-slate-500 text-lg mb-8">Vorsorgekapital bei Stellenwechsel optimal anlegen.</p>
-      <p class="text-slate-600 mb-8">Wenn Sie eine Pensionskasse verlassen, müssen Ihre Freizügigkeitsleistungen innerhalb von sechs Monaten übertragen werden. Solidwave hilft Ihnen, die beste Lösung zu finden.</p>
-      <ul class="space-y-3">
-        <li class="flex gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">&#10003;</span>Vergleich von Freizügigkeitskonten verschiedener Anbieter</li>
-        <li class="flex gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">&#10003;</span>Beratung zur optimalen Anlagestrategie</li>
-        <li class="flex gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">&#10003;</span>Unterstützung bei der Übertragung</li>
-        <li class="flex gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">&#10003;</span>Steueroptimierung durch Aufteilung auf mehrere Konten</li>
+    <Breadcrumb crumbs={[
+      { label: 'Startseite', href: '/de/' },
+      { label: 'Vorsorge', href: '/de/vorsorge/' },
+      { label: 'Freizügigkeitskonten' },
+    ]} />
+
+    <div class="max-w-3xl mb-10">
+      <h1 class="text-3xl sm:text-4xl font-bold text-[#0A2647] mb-4">Freizügigkeitskonten – Ihr Vorsorgekapital sicher parkieren</h1>
+      <p class="text-slate-500 text-lg leading-relaxed">Bei einem Stellenwechsel oder Erwerbsunterbruch müssen Ihre Pensionskassengelder geschützt und optimal angelegt werden.</p>
+    </div>
+
+    <p class="text-slate-600 leading-relaxed mb-10 max-w-3xl">Wenn Sie eine Pensionskasse verlassen – sei es durch Stellenwechsel, Arbeitslosigkeit oder eine Auszeit – müssen Ihre Freizügigkeitsleistungen innerhalb von sechs Monaten auf ein Freizügigkeitskonto oder eine Freizügigkeitspolice übertragen werden. Die Wahl des richtigen Anbieters und der passenden Anlagestrategie hat langfristig erheblichen Einfluss auf Ihr Vorsorgekapital. Solidwave hilft Ihnen, die beste Lösung zu finden.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10 max-w-3xl">
+      {[
+        { title: 'Übertragungspflicht innert 6 Monaten', desc: 'Nach Austritt aus der Pensionskasse müssen Ihre Freizügigkeitsleistungen fristgerecht übertragen werden. Andernfalls erfolgt eine Überweisung an die Auffangeinrichtung BVG.' },
+        { title: 'Bankkonto oder Versicherungspolice', desc: 'Bankkonten bieten Flexibilität und meist tiefere Kosten. Versicherungspolicen kombinieren Sparen mit Risikoschutz bei Invalidität oder Todesfall.' },
+        { title: 'Steuervorteile nutzen', desc: 'Das Guthaben bleibt von der Einkommens- und Vermögenssteuer befreit. Durch Aufteilung auf zwei Konten lässt sich die Steuerlast beim Bezug weiter optimieren.' },
+        { title: 'Anlageoptionen und Rendite', desc: 'Je nach Anbieter stehen verschiedene Anlagestrategien zur Verfügung – von konservativ bis aktienbasiert. Bei langem Anlagehorizont kann eine aktive Strategie Ihr Kapital deutlich mehren.' },
+      ].map(item => (
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-[var(--shadow-card)]">
+          <h3 class="text-base font-semibold text-[#0A2647] mb-2">{item.title}</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mb-10 max-w-3xl">
+      <h2 class="text-xl font-semibold text-[#0A2647] mb-5">Unsere Leistungen</h2>
+      <ul class="space-y-2.5">
+        {[
+          'Vergleich von Freizügigkeitskonten und -policen verschiedener Anbieter',
+          'Beratung zur optimalen Anlagestrategie basierend auf Ihrem Zeithorizont',
+          'Unterstützung bei der Übertragung Ihrer Freizügigkeitsleistungen',
+          'Steueroptimierung durch Aufteilung auf mehrere Konten',
+        ].map(item => (
+          <li class="flex items-start gap-2 text-slate-600">
+            <span class="text-[#4A7C8C] font-bold mt-0.5">✓</span>{item}
+          </li>
+        ))}
       </ul>
     </div>
+
+    <div class="mt-10 max-w-3xl">
+      <h2 class="text-xl font-semibold text-[#0A2647] mb-5">Weitere Themen</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <ServiceCard title="Säule 3a – Steuern sparen" description="Die gebundene Vorsorge ist eines der wirksamsten Instrumente zur Steueroptimierung in der Schweiz." href="/de/vorsorge/saeule-3a/" />
+        <ServiceCard title="Pensionsplanung" description="Eine frühzeitige und umfassende Pensionsplanung sichert Ihren Lebensstandard im Alter." href="/de/vorsorge/pensionsplanung/" />
+      </div>
+    </div>
   </div>
-  <CtaBanner title="Bereit für eine Beratung?" description="Kostenlos und unverbindlich." buttonLabel="Jetzt Kontakt aufnehmen" buttonHref="/de/kontakt/" />
+
+  <CtaBanner
+    title="Bereit für eine unabhängige Beratung?"
+    description="Kontaktieren Sie uns für eine kostenlose und unverbindliche Erstberatung. Gemeinsam finden wir die optimale Lösung für Ihre Versicherungsbedürfnisse."
+    buttonLabel="Jetzt Kontakt aufnehmen"
+    buttonHref="/de/kontakt/"
+  />
 </Base>
