@@ -47,7 +47,7 @@ export const POST: APIRoute = async ({ request }) => {
   const topicLabel = topic ? (topicMap[topic]?.[lang] ?? topic) : '';
 
   const RESEND_API_KEY = import.meta.env.RESEND_API_KEY;
-  const TO = import.meta.env.CONTACT_TO_EMAIL ?? 'mm@solidwave.ch';
+  const TO = import.meta.env.CONTACT_TO_EMAIL ?? 'service@solidwave.ch';
   const FROM = import.meta.env.CONTACT_FROM_EMAIL ?? 'noreply@solidwave.ch';
 
   if (!RESEND_API_KEY) {
@@ -87,7 +87,7 @@ export const POST: APIRoute = async ({ request }) => {
         <div style="background: white; border: 1px solid #e2e8f0; border-radius: 6px; padding: 16px; font-size: 14px; line-height: 1.6; white-space: pre-wrap;">${message}</div>
       </div>
       <p style="color: #94a3b8; font-size: 12px; text-align: center; margin-top: 16px;">
-        Solidwave Group SA · Zug, Switzerland · solidwave.ch
+        Solidwave Group AG · Zug, Switzerland · solidwave.ch
       </p>
     </div>
   `;

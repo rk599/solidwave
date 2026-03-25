@@ -1,0 +1,71 @@
+---
+import Base from '@/layouts/Base.astro';
+import Breadcrumb from '@/components/Breadcrumb.astro';
+import ServiceCard from '@/components/ServiceCard.astro';
+import CtaBanner from '@/components/CtaBanner.astro';
+
+const lang = 'en' as const;
+---
+
+<Base lang={lang} title="Pension Consulting – Solidwave Group AG">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-20">
+    <Breadcrumb crumbs={[
+      { label: 'Home', href: '/en/' },
+      { label: 'Pension Planning', href: '/en/pension-planning/' },
+      { label: 'Pension Consulting' },
+    ]} />
+
+    <div class="max-w-3xl mb-10">
+      <h1 class="text-3xl sm:text-4xl font-bold text-[#0A2647] mb-4">Pension consulting – plan your retirement right</h1>
+      <p class="text-slate-500 text-lg leading-relaxed">Early and comprehensive retirement planning ensures you can maintain your standard of living in old age.</p>
+    </div>
+
+    <p class="text-slate-600 leading-relaxed mb-10 max-w-3xl">Retirement planning covers the analysis and coordination of all three pillars of the Swiss pension system: AHV (1st pillar), occupational pension fund (2nd pillar), and private pension (3rd pillar). The goal is to identify pension gaps early, optimize the withdrawal strategy from a tax perspective, and make early retirement financially viable if desired. Solidwave guides you on the path to a worry-free retirement.</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10 max-w-3xl">
+      {[
+        { title: 'Pension gap analysis', desc: 'We calculate how much income you will receive in retirement from AHV and your pension fund, and show the gap between your current standard of living and your expected pension.' },
+        { title: 'Pension fund buy-in', desc: 'Voluntary buy-ins into the pension fund are tax-deductible and simultaneously increase your retirement benefits. We assess whether a buy-in makes financial sense for you.' },
+        { title: 'Coordination of all three pillars', desc: 'AHV, pension fund, and Pillar 3a/3b must be coordinated. We create a comprehensive plan that accounts for and optimizes all pension components.' },
+        { title: 'Tax-efficient withdrawal strategy', desc: 'Pension, capital, or combination – the timing and form of withdrawal have significant tax implications. We show you how to minimize your tax burden.' },
+      ].map(item => (
+        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-[var(--shadow-card)]">
+          <h3 class="text-base font-semibold text-[#0A2647] mb-2">{item.title}</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
+        </div>
+      ))}
+    </div>
+
+    <div class="mb-10 max-w-3xl">
+      <h2 class="text-xl font-semibold text-[#0A2647] mb-5">What We Offer</h2>
+      <ul class="space-y-2.5">
+        {[
+          'Comprehensive retirement planning across all three pillars',
+          'Calculation of your individual pension gap',
+          'Advice on pension fund buy-ins and their tax benefits',
+          'Planning for early retirement and bridge financing',
+          'Optimization of withdrawal strategy (pension vs. capital vs. combination)',
+        ].map(item => (
+          <li class="flex items-start gap-2 text-slate-600">
+            <span class="text-[#4A7C8C] font-bold mt-0.5">✓</span>{item}
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <div class="mt-10 max-w-3xl">
+      <h2 class="text-xl font-semibold text-[#0A2647] mb-5">Related Topics</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <ServiceCard title="Vested Benefits" description="Protect and optimally invest your pension capital during job changes or career breaks." href="/en/pension-planning/vested-benefits/" />
+        <ServiceCard title="Pillar 3a – save taxes" description="Restricted pension is one of the most effective tax optimization instruments in Switzerland." href="/en/pension-planning/pillar-3a/" />
+      </div>
+    </div>
+  </div>
+
+  <CtaBanner
+    title="Ready for independent advice?"
+    description="Contact us for a free and non-binding initial consultation. Together, we will find the optimal solution for your insurance needs."
+    buttonLabel="Get in Touch"
+    buttonHref="/en/contact/"
+  />
+</Base>

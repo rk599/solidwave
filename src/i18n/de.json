@@ -1,6 +1,6 @@
 {
   "meta": {
-    "siteName": "Solidwave Group SA",
+    "siteName": "Solidwave Group AG",
     "siteDesc": "Ihr unabhängiger Versicherungsbroker in der Schweiz. Wir beraten Sie persönlich, transparent und kostenfrei.",
     "locale": "de"
   },
@@ -133,7 +133,11 @@
     "riskTitle": "Risikoversicherung – Ihre Familie schützen",
     "riskDesc": "Schützen Sie Ihre Liebsten finanziell bei Tod oder Invalidität.",
     "kidsTitle": "Kinderpläne – eine sichere Zukunft für Ihre Kinder",
-    "kidsDesc": "Vorsorge, Schutz und Ausbildungskapital – damit Ihre Kinder optimal abgesichert sind."
+    "kidsDesc": "Vorsorge, Schutz und Ausbildungskapital – damit Ihre Kinder optimal abgesichert sind.",
+    "vestedTitle": "Freizügigkeitskonten – Ihr Vorsorgekapital sicher parkieren",
+    "vestedDesc": "Bei einem Stellenwechsel oder Erwerbsunterbruch müssen Ihre Pensionskassengelder geschützt und optimal angelegt werden.",
+    "retirementTitle": "Pensionsplanung – Ihren Ruhestand richtig planen",
+    "retirementDesc": "Eine frühzeitige und umfassende Pensionsplanung sorgt dafür, dass Sie Ihren Lebensstandard im Alter halten können."
   },
   "property": {
     "breadcrumb": "Sachversicherung",
@@ -177,13 +181,14 @@
     "successTitle": "Nachricht gesendet!",
     "successDesc": "Vielen Dank für Ihre Nachricht. Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
     "errorTitle": "Etwas ist schiefgelaufen.",
-    "errorDesc": "Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an mm@solidwave.ch.",
+    "errorDesc": "Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an service@solidwave.ch.",
     "otherTitle": "Andere Kontaktmöglichkeiten",
     "emailLabel": "E-Mail",
     "addressLabel": "Adresse",
-    "address": "Solidwave Group SA\nZug\nSchweiz",
+    "address": "Solidwave Group AG\nLauriedhofweg 1\n6300 Zug\nSchweiz",
     "hoursLabel": "Erreichbarkeit",
-    "hours": "Montag bis Freitag, 08:00 – 18:00 Uhr"
+    "hours": "Montag bis Freitag, 08:00 – 18:00 Uhr",
+    "phone_number": "+41 61 531 10 70"
   },
   "footer": {
     "tagline": "Ihr unabhängiger Versicherungsbroker in der Schweiz. Wir beraten Sie persönlich, transparent und kostenfrei.",
@@ -194,23 +199,24 @@
     "privacy": "Datenschutz",
     "terms": "Nutzungsbedingungen",
     "vag": "VAG Art. 45",
-    "copyright": "© 2026 Solidwave Group SA. Alle Rechte vorbehalten."
+    "copyright": "© 2026 Solidwave Group AG. Alle Rechte vorbehalten.",
+    "phone": "Telefon"
   },
   "legal": {
     "breadcrumb": "Impressum",
     "title": "Impressum",
     "companyTitle": "Unternehmen",
-    "company": "Solidwave Group SA\nZug\nSchweiz",
+    "company": "Solidwave Group AG\nZug\nSchweiz",
     "contactTitle": "Kontakt",
-    "contactText": "E-Mail: mm@solidwave.ch",
+    "contactText": "E-Mail: service@solidwave.ch",
     "registerTitle": "Handelsregistereintrag",
     "registerText": "Eingetragen im Handelsregister des Kantons Zug\nRechtsform: Aktiengesellschaft (AG)\nUID: (in Bearbeitung)",
     "supervisoryTitle": "Aufsichtsbehörde",
-    "supervisoryText": "Solidwave Group SA ist bei der FINMA (Eidgenössische Finanzmarktaufsicht) als unabhängiger Versicherungsvermittler registriert.",
+    "supervisoryText": "Solidwave Group AG ist bei der FINMA (Eidgenössische Finanzmarktaufsicht) als unabhängiger Versicherungsvermittler registriert.",
     "disclaimerTitle": "Haftungsausschluss",
     "disclaimerText": "Die Inhalte dieser Website werden mit grösster Sorgfalt erstellt. Jedoch können wir keine Gewähr für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen. Die Nutzung der Website-Inhalte erfolgt auf eigene Gefahr. Beiträge Dritter sind als solche gekennzeichnet. Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für externe Links. Für den Inhalt der verlinkten Seiten sind ausschliesslich deren Betreiber verantwortlich.",
     "copyrightTitle": "Urheberrecht",
-    "copyrightText": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem Schweizer Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung ausserhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung der Solidwave Group SA."
+    "copyrightText": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem Schweizer Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung ausserhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung der Solidwave Group AG."
   },
   "privacy": {
     "breadcrumb": "Datenschutz",
@@ -218,7 +224,7 @@
     "lastUpdated": "Stand: März 2026",
     "intro": "Der Schutz Ihrer persönlichen Daten ist uns wichtig. Diese Datenschutzerklärung informiert Sie darüber, wie wir mit Ihren Daten umgehen.",
     "responsibleTitle": "Verantwortliche Stelle",
-    "responsibleText": "Solidwave Group SA, Zug, Schweiz. E-Mail: mm@solidwave.ch",
+    "responsibleText": "Solidwave Group AG, Zug, Schweiz. E-Mail: service@solidwave.ch",
     "dataTitle": "Erhobene Daten",
     "dataText": "Wir erheben nur Daten, die Sie uns freiwillig über das Kontaktformular mitteilen: Name, E-Mail-Adresse, Telefonnummer (optional) und Ihre Nachricht.",
     "purposeTitle": "Zweck der Datenverarbeitung",
@@ -226,7 +232,7 @@
     "storageTitle": "Datenspeicherung",
     "storageText": "Ihre Daten werden über die Resend API sicher übermittelt und nur so lange gespeichert, wie es zur Bearbeitung Ihrer Anfrage erforderlich ist.",
     "rightsTitle": "Ihre Rechte",
-    "rightsText": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Bitte kontaktieren Sie uns unter mm@solidwave.ch.",
+    "rightsText": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Bitte kontaktieren Sie uns unter service@solidwave.ch.",
     "cookiesTitle": "Cookies",
     "cookiesText": "Diese Website verwendet derzeit keine Tracking-Cookies oder Analyse-Tools."
   },
@@ -241,7 +247,7 @@
     "liabilityTitle": "Haftung",
     "liabilityText": "Wir haften nicht für die Richtigkeit, Vollständigkeit oder Aktualität der Informationen auf dieser Website. Die Nutzung erfolgt auf eigene Gefahr.",
     "intellectualTitle": "Geistiges Eigentum",
-    "intellectualText": "Alle Inhalte, Logos und Marken auf dieser Website sind Eigentum der Solidwave Group SA und dürfen ohne vorherige schriftliche Zustimmung nicht verwendet werden.",
+    "intellectualText": "Alle Inhalte, Logos und Marken auf dieser Website sind Eigentum der Solidwave Group AG und dürfen ohne vorherige schriftliche Zustimmung nicht verwendet werden.",
     "lawTitle": "Anwendbares Recht",
     "lawText": "Diese Nutzungsbedingungen unterliegen Schweizer Recht. Gerichtsstand ist Zug, Schweiz."
   },
@@ -252,13 +258,13 @@
     "legalTitle": "Rechtsgrundlage",
     "legalText": "Gemäss Art. 45 des Bundesgesetzes über die Versicherungsaufsicht (VAG) sind Versicherungsvermittler verpflichtet, ihre Kunden über die Art und den Umfang ihrer Vergütung zu informieren.",
     "statusTitle": "Unser Status",
-    "statusText": "Solidwave Group SA ist bei der FINMA als unabhängiger Versicherungsvermittler registriert. Als unabhängiger Broker sind wir an keine bestimmte Versicherungsgesellschaft gebunden und handeln ausschliesslich im Interesse unserer Kunden.",
+    "statusText": "Solidwave Group AG ist bei der FINMA als unabhängiger Versicherungsvermittler registriert. Als unabhängiger Broker sind wir an keine bestimmte Versicherungsgesellschaft gebunden und handeln ausschliesslich im Interesse unserer Kunden.",
     "compensationTitle": "Vergütung",
     "compensationText": "Unsere Leistungen – Beratung, Vergleich und Vermittlung von Versicherungsprodukten – sind für unsere Kunden kostenlos. Wir finanzieren uns durch Vermittlungsprovisionen (Courtagen), die uns von den Versicherungsgesellschaften für die Platzierung von Versicherungsverträgen bezahlt werden.\n\nVermittlungsprovisionen sind Teil der regulären Prämienstruktur der Versicherungsgesellschaften. Ob Sie eine Versicherung direkt oder über uns abschliessen, hat keinen Einfluss auf Ihren Prämienbetrag.\n\nDie Höhe der Provision variiert je nach Versicherungsprodukt und Gesellschaft. Auf Anfrage informieren wir Sie gerne über die konkrete Vergütung für ein bestimmtes Produkt.",
     "conflictsTitle": "Interessenkonflikte",
     "conflictsText": "Wir verpflichten uns, allfällige Interessenkonflikte offenzulegen. Unsere Empfehlungen basieren auf Ihren individuellen Bedürfnissen und nicht auf der Höhe der Vergütung. Sollte ein Interessenkonflikt bestehen, werden wir Sie im Voraus informieren.",
     "rightsTitle": "Ihr Auskunftsrecht",
-    "rightsText": "Sie haben jederzeit das Recht, detaillierte Informationen über unsere Vergütung für ein bestimmtes Versicherungsprodukt zu verlangen. Bitte kontaktieren Sie uns unter mm@solidwave.ch."
+    "rightsText": "Sie haben jederzeit das Recht, detaillierte Informationen über unsere Vergütung für ein bestimmtes Versicherungsprodukt zu verlangen. Bitte kontaktieren Sie uns unter service@solidwave.ch."
   },
   "breadcrumb": {
     "home": "Startseite"

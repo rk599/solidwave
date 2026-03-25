@@ -42,6 +42,8 @@ export function getAlternateHref(url: URL, lang: Lang): string {
     'vorsorge/lebensversicherung': 'pension-planning/life-insurance',
     'vorsorge/risikoversicherung': 'pension-planning/risk-insurance',
     'vorsorge/kinderplaene': 'pension-planning/childrens-plans',
+    'vorsorge/freizuegigkeit': 'pension-planning/vested-benefits',
+    'vorsorge/pensionsplanung': 'pension-planning/pension-consulting',
     sachversicherung: 'property-insurance',
     'sachversicherung/auto': 'property-insurance/auto',
     'sachversicherung/hausrat': 'property-insurance/household',
@@ -128,6 +130,8 @@ export function getServiceLinks(lang: Lang) {
         { href: '/de/vorsorge/lebensversicherung/', key: 'Lebensversicherung' },
         { href: '/de/vorsorge/risikoversicherung/', key: 'Risikoversicherung' },
         { href: '/de/vorsorge/kinderplaene/', key: 'Kinderpläne' },
+        { href: '/de/vorsorge/freizuegigkeit/', key: 'Freizügigkeitskonten' },
+        { href: '/de/vorsorge/pensionsplanung/', key: 'Pensionsplanung' },
       ],
       property: '/de/sachversicherung/',
       propertySubs: [

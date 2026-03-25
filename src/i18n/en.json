@@ -1,6 +1,6 @@
 {
   "meta": {
-    "siteName": "Solidwave Group SA",
+    "siteName": "Solidwave Group AG",
     "siteDesc": "Your independent insurance broker in Switzerland. Personal, transparent, and free-of-charge advice.",
     "locale": "en"
   },
@@ -133,7 +133,11 @@
     "riskTitle": "Risk insurance – protect your family",
     "riskDesc": "Protect your loved ones financially in case of death or disability.",
     "kidsTitle": "Children's plans – a secure future for your children",
-    "kidsDesc": "Pension, protection, and education capital – so your children are optimally covered."
+    "kidsDesc": "Pension, protection, and education capital – so your children are optimally covered.",
+    "vestedTitle": "Vested benefits accounts – safeguard your pension capital",
+    "vestedDesc": "When changing jobs or taking a career break, your pension fund assets need to be protected and optimally invested.",
+    "retirementTitle": "Pension consulting – plan your retirement right",
+    "retirementDesc": "Early and comprehensive retirement planning ensures you can maintain your standard of living in old age."
   },
   "property": {
     "breadcrumb": "Property Insurance",
@@ -177,13 +181,14 @@
     "successTitle": "Message sent!",
     "successDesc": "Thank you for your message. We will get back to you within 24 hours.",
     "errorTitle": "Something went wrong.",
-    "errorDesc": "Please try again or email us directly at mm@solidwave.ch.",
+    "errorDesc": "Please try again or email us directly at service@solidwave.ch.",
     "otherTitle": "Other ways to reach us",
     "emailLabel": "Email",
     "addressLabel": "Address",
-    "address": "Solidwave Group SA\nZug\nSwitzerland",
+    "address": "Solidwave Group AG\nLauriedhofweg 1\n6300 Zug\nSwitzerland",
     "hoursLabel": "Availability",
-    "hours": "Monday to Friday, 08:00 – 18:00"
+    "hours": "Monday to Friday, 08:00 – 18:00",
+    "phone_number": "+41 61 531 10 70"
   },
   "footer": {
     "tagline": "Your independent insurance broker in Switzerland. Personal, transparent, and free-of-charge advice.",
@@ -194,23 +199,24 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Use",
     "vag": "ISA Art. 45",
-    "copyright": "© 2026 Solidwave Group SA. All rights reserved."
+    "copyright": "© 2026 Solidwave Group AG. All rights reserved.",
+    "phone": "Phone"
   },
   "legal": {
     "breadcrumb": "Legal Notice",
     "title": "Legal Notice",
     "companyTitle": "Company",
-    "company": "Solidwave Group SA\nZug\nSwitzerland",
+    "company": "Solidwave Group AG\nZug\nSwitzerland",
     "contactTitle": "Contact",
-    "contactText": "Email: mm@solidwave.ch",
+    "contactText": "Email: service@solidwave.ch",
     "registerTitle": "Commercial Register Entry",
     "registerText": "Registered in the Commercial Register of the Canton of Zug\nLegal form: Public limited company (SA)\nUID: (in progress)",
     "supervisoryTitle": "Supervisory Authority",
-    "supervisoryText": "Solidwave Group SA is registered as an independent insurance intermediary with FINMA (Swiss Financial Market Supervisory Authority).",
+    "supervisoryText": "Solidwave Group AG is registered as an independent insurance intermediary with FINMA (Swiss Financial Market Supervisory Authority).",
     "disclaimerTitle": "Disclaimer",
     "disclaimerText": "The content of this website is created with the utmost care. However, we cannot guarantee the accuracy, completeness, or timeliness of the content. Use of the website content is at your own risk. Third-party contributions are identified as such. Despite careful content review, we assume no liability for external links. The operators of linked pages are solely responsible for their content.",
     "copyrightTitle": "Copyright",
-    "copyrightText": "The content and works created by the site operators on this website are subject to Swiss copyright law. Reproduction, editing, distribution, and any kind of exploitation beyond the limits of copyright require the written consent of Solidwave Group SA."
+    "copyrightText": "The content and works created by the site operators on this website are subject to Swiss copyright law. Reproduction, editing, distribution, and any kind of exploitation beyond the limits of copyright require the written consent of Solidwave Group AG."
   },
   "privacy": {
     "breadcrumb": "Privacy Policy",
@@ -218,7 +224,7 @@
     "lastUpdated": "Last updated: March 2026",
     "intro": "We take the protection of your personal data seriously. This privacy policy informs you about how we handle your data.",
     "responsibleTitle": "Responsible Party",
-    "responsibleText": "Solidwave Group SA, Zug, Switzerland. Email: mm@solidwave.ch",
+    "responsibleText": "Solidwave Group AG, Zug, Switzerland. Email: service@solidwave.ch",
     "dataTitle": "Data We Collect",
     "dataText": "We only collect data that you voluntarily provide to us via the contact form: name, email address, phone number (optional), and your message.",
     "purposeTitle": "Purpose of Data Processing",
@@ -226,7 +232,7 @@
     "storageTitle": "Data Storage",
     "storageText": "Your data is transmitted securely via the Resend API and stored only for as long as necessary to process your inquiry.",
     "rightsTitle": "Your Rights",
-    "rightsText": "You have the right to access, correct, delete, and restrict the processing of your personal data. Please contact us at mm@solidwave.ch.",
+    "rightsText": "You have the right to access, correct, delete, and restrict the processing of your personal data. Please contact us at service@solidwave.ch.",
     "cookiesTitle": "Cookies",
     "cookiesText": "This website does not currently use tracking cookies or analytics tools."
   },
@@ -241,7 +247,7 @@
     "liabilityTitle": "Liability",
     "liabilityText": "We are not liable for the accuracy, completeness, or timeliness of information on this website. Use is at your own risk.",
     "intellectualTitle": "Intellectual Property",
-    "intellectualText": "All content, logos, and trademarks on this website are the property of Solidwave Group SA and may not be used without prior written consent.",
+    "intellectualText": "All content, logos, and trademarks on this website are the property of Solidwave Group AG and may not be used without prior written consent.",
     "lawTitle": "Applicable Law",
     "lawText": "These Terms of Use are governed by Swiss law. The place of jurisdiction is Zug, Switzerland."
   },
@@ -252,13 +258,13 @@
     "legalTitle": "Legal Basis",
     "legalText": "Under Art. 45 of the Federal Act on the Supervision of Insurance Companies (Insurance Supervision Act, ISA), insurance intermediaries are required to inform their clients about the nature and extent of their compensation.",
     "statusTitle": "Our Status",
-    "statusText": "Solidwave Group SA is registered with FINMA as an independent insurance intermediary. As an independent broker, we are not tied to any particular insurance company and act exclusively in the interests of our clients.",
+    "statusText": "Solidwave Group AG is registered with FINMA as an independent insurance intermediary. As an independent broker, we are not tied to any particular insurance company and act exclusively in the interests of our clients.",
     "compensationTitle": "Compensation",
     "compensationText": "Our services – advice, comparison, and brokerage of insurance products – are free of charge for our clients. We finance ourselves through brokerage commissions (courtages) paid to us by insurance companies for the placement of insurance contracts.\n\nBrokerage commissions are part of the regular premium structure of insurance companies. Whether you take out insurance directly or through us has no impact on your premium amount.\n\nThe amount of commission varies depending on the insurance product and company. Upon request, we are happy to inform you about the specific compensation for a particular product.",
     "conflictsTitle": "Conflicts of Interest",
     "conflictsText": "We are committed to disclosing any conflicts of interest. Our recommendations are based on your individual needs and not on the amount of compensation. Should a conflict of interest exist, we will inform you in advance.",
     "rightsTitle": "Your Right to Information",
-    "rightsText": "You have the right at any time to request detailed information about our compensation for a specific insurance product. Please contact us at mm@solidwave.ch."
+    "rightsText": "You have the right at any time to request detailed information about our compensation for a specific insurance product. Please contact us at service@solidwave.ch."
   },
   "breadcrumb": {
     "home": "Home"
