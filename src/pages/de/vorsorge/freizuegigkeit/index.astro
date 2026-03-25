@@ -1,26 +1,20 @@
 ---
-import Base from '@/layouts/Base.astro';
-import Breadcrumb from '@/components/Breadcrumb.astro';
-import CtaBanner from '@/components/CtaBanner.astro';
-const lang = 'de';
+import Base from "@/layouts/Base.astro";
+import Breadcrumb from "@/components/Breadcrumb.astro";
+import CtaBanner from "@/components/CtaBanner.astro";
+const lang = "de";
 ---
-<Base lang={lang} title="Freizügigkeitskonten – Solidwave Group AG">
+<Base lang={lang} title="Freizuegigkeitskonten - Solidwave Group AG">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-20">
-    <Breadcrumb crumbs={[{label:'Startseite',href:'/de/'},{label:'Vorsorge',href:'/de/vorsorge/'},{label:'Freizügigkeitskonten'}]} />
-    <div class="max-w-3xl mb-10">
-      <h1 class="text-3xl sm:text-4xl font-bold text-[#0A2647] mb-4">Freizügigkeitskonten – Ihr Vorsorgekapital sicher parkieren</h1>
-      <p class="text-slate-500 text-lg leading-relaxed">Bei einem Stellenwechsel oder Erwerbsunterbruch müssen Ihre Pensionskassengelder geschützt und optimal angelegt werden.</p>
-    </div>
-    <p class="text-slate-600 leading-relaxed mb-10 max-w-3xl">Wenn Sie eine Pensionskasse verlassen – sei es durch Stellenwechsel, Arbeitslosigkeit oder eine Auszeit – müssen Ihre Freizügigkeitsleistungen innerhalb von sechs Monaten auf ein Freizügigkeitskonto übertragen werden. Solidwave hilft Ihnen, die beste Lösung zu finden.</p>
-    <div class="mb-10 max-w-3xl">
-      <h2 class="text-xl font-semibold text-[#0A2647] mb-5">Unsere Leistungen</h2>
-      <ul class="space-y-2.5">
-        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Vergleich von Freizügigkeitskonten verschiedener Anbieter</li>
-        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Beratung zur optimalen Anlagestrategie</li>
-        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Unterstützung bei der Übertragung Ihrer Freizügigkeitsleistungen</li>
-        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Steueroptimierung durch Aufteilung auf mehrere Konten</li>
-      </ul>
-    </div>
+    <Breadcrumb crumbs={[{label:"Startseite",href:"/de/"},{label:"Vorsorge",href:"/de/vorsorge/"},{label:"Freizuegigkeitskonten"}]} />
+    <h1 class="text-3xl font-bold text-[#0A2647] mb-4">Freizuegigkeitskonten</h1>
+    <p class="text-slate-500 text-lg mb-8">Bei einem Stellenwechsel muessen Ihre Pensionskassengelder geschuetzt und optimal angelegt werden.</p>
+    <ul class="space-y-3 max-w-3xl">
+      <li class="flex gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">V</span>Vergleich von Freizuegigkeitskonten verschiedener Anbieter</li>
+      <li class="flex gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">V</span>Beratung zur optimalen Anlagestrategie</li>
+      <li class="flex gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">V</span>Unterstuetzung bei der Uebertragung</li>
+      <li class="flex gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">V</span>Steueroptimierung</li>
+    </ul>
   </div>
-  <CtaBanner title="Bereit für eine unabhängige Beratung?" description="Kostenlose und unverbindliche Erstberatung – wir finden die optimale Lösung." buttonLabel="Jetzt Kontakt aufnehmen" buttonHref="/de/kontakt/" />
+  <CtaBanner title="Beratung?" description="Kostenlos und unverbindlich." buttonLabel="Kontakt" buttonHref="/de/kontakt/" />
 </Base>
