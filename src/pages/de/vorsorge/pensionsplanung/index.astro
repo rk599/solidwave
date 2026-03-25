@@ -1,73 +1,27 @@
 ---
 import Base from '@/layouts/Base.astro';
 import Breadcrumb from '@/components/Breadcrumb.astro';
-import ServiceCard from '@/components/ServiceCard.astro';
 import CtaBanner from '@/components/CtaBanner.astro';
-import { useTranslations } from '@/i18n';
-
-const lang = 'de' as const;
-const t = useTranslations(lang);
+const lang = 'de';
 ---
-
 <Base lang={lang} title="Pensionsplanung – Solidwave Group AG">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-20">
-    <Breadcrumb crumbs={[
-      { label: 'Startseite', href: '/de/' },
-      { label: 'Vorsorge', href: '/de/vorsorge/' },
-      { label: 'Pensionsplanung' },
-    ]} />
-
+    <Breadcrumb crumbs={[{label:'Startseite',href:'/de/'},{label:'Vorsorge',href:'/de/vorsorge/'},{label:'Pensionsplanung'}]} />
     <div class="max-w-3xl mb-10">
       <h1 class="text-3xl sm:text-4xl font-bold text-[#0A2647] mb-4">Pensionsplanung – Ihren Ruhestand richtig planen</h1>
       <p class="text-slate-500 text-lg leading-relaxed">Eine frühzeitige und umfassende Pensionsplanung sorgt dafür, dass Sie Ihren Lebensstandard im Alter halten können.</p>
     </div>
-
-    <p class="text-slate-600 leading-relaxed mb-10 max-w-3xl">Die Pensionsplanung umfasst die Analyse und Koordination aller drei Säulen des Schweizer Vorsorgesystems: AHV (1. Säule), Pensionskasse (2. Säule) und private Vorsorge (3. Säule). Ziel ist es, Vorsorgelücken frühzeitig zu erkennen, die Bezugsstrategie steuerlich zu optimieren und bei Bedarf eine Frühpensionierung finanziell tragbar zu gestalten. Solidwave begleitet Sie auf dem Weg zu einem sorgenfreien Ruhestand.</p>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10 max-w-3xl">
-      {[
-        { title: 'Vorsorgelücken-Analyse', desc: 'Wir berechnen, wie viel Einkommen Ihnen im Alter aus AHV und Pensionskasse zusteht, und zeigen auf, welche Lücke zwischen Ihrem heutigen Lebensstandard und der erwarteten Rente besteht.' },
-        { title: 'Pensionskassen-Einkauf', desc: 'Freiwillige Einkäufe in die Pensionskasse sind vom steuerbaren Einkommen abzugsfähig und erhöhen gleichzeitig Ihre Altersleistungen. Wir prüfen, ob ein Einkauf für Sie sinnvoll ist.' },
-        { title: 'Koordination aller drei Säulen', desc: 'AHV, Pensionskasse und Säule 3a/3b müssen aufeinander abgestimmt werden. Wir erstellen einen Gesamtplan, der alle Vorsorgebausteine berücksichtigt.' },
-        { title: 'Steuereffiziente Bezugsstrategie', desc: 'Rente, Kapital oder Kombination – der Zeitpunkt und die Form des Bezugs haben erhebliche steuerliche Auswirkungen. Wir zeigen Ihnen, wie Sie die Steuerbelastung minimieren.' },
-      ].map(item => (
-        <div class="rounded-xl border border-slate-200 bg-white p-6 shadow-[var(--shadow-card)]">
-          <h3 class="text-base font-semibold text-[#0A2647] mb-2">{item.title}</h3>
-          <p class="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
-        </div>
-      ))}
-    </div>
-
+    <p class="text-slate-600 leading-relaxed mb-10 max-w-3xl">Die Pensionsplanung umfasst die Analyse und Koordination aller drei Säulen: AHV, Pensionskasse und private Vorsorge. Ziel ist es, Vorsorgelücken frühzeitig zu erkennen und die Bezugsstrategie steuerlich zu optimieren.</p>
     <div class="mb-10 max-w-3xl">
       <h2 class="text-xl font-semibold text-[#0A2647] mb-5">Unsere Leistungen</h2>
       <ul class="space-y-2.5">
-        {[
-          'Umfassende Pensionsplanung mit Berücksichtigung aller drei Säulen',
-          'Berechnung Ihrer individuellen Vorsorgelücke',
-          'Beratung zu Pensionskassen-Einkäufen und deren steuerlichen Vorteilen',
-          'Planung der Frühpensionierung und Überbrückungsfinanzierung',
-          'Optimierung der Bezugsstrategie (Rente vs. Kapital vs. Kombination)',
-        ].map(item => (
-          <li class="flex items-start gap-2 text-slate-600">
-            <span class="text-[#4A7C8C] font-bold mt-0.5">✓</span>{item}
-          </li>
-        ))}
+        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Umfassende Pensionsplanung mit allen drei Säulen</li>
+        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Berechnung Ihrer individuellen Vorsorgelücke</li>
+        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Beratung zu Pensionskassen-Einkäufen</li>
+        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Planung der Frühpensionierung</li>
+        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Optimierung der Bezugsstrategie (Rente vs. Kapital)</li>
       </ul>
     </div>
-
-    <div class="mt-10 max-w-3xl">
-      <h2 class="text-xl font-semibold text-[#0A2647] mb-5">Weitere Themen</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-        <ServiceCard title="Freizügigkeitskonten" description="Ihr Vorsorgekapital bei Stellenwechsel oder Erwerbsunterbruch optimal anlegen." href="/de/vorsorge/freizuegigkeit/" />
-        <ServiceCard title="Säule 3a – Steuern sparen" description="Die gebundene Vorsorge ist eines der wirksamsten Instrumente zur Steueroptimierung." href="/de/vorsorge/saeule-3a/" />
-      </div>
-    </div>
   </div>
-
-  <CtaBanner
-    title="Bereit für eine unabhängige Beratung?"
-    description="Kontaktieren Sie uns für eine kostenlose und unverbindliche Erstberatung. Gemeinsam finden wir die optimale Lösung für Ihre Versicherungsbedürfnisse."
-    buttonLabel="Jetzt Kontakt aufnehmen"
-    buttonHref="/de/kontakt/"
-  />
+  <CtaBanner title="Bereit für eine unabhängige Beratung?" description="Kostenlose und unverbindliche Erstberatung – wir finden die optimale Lösung." buttonLabel="Jetzt Kontakt aufnehmen" buttonHref="/de/kontakt/" />
 </Base>
