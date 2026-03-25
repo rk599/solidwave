@@ -4,24 +4,21 @@ import Breadcrumb from '@/components/Breadcrumb.astro';
 import CtaBanner from '@/components/CtaBanner.astro';
 const lang = 'de';
 ---
-<Base lang={lang} title="Pensionsplanung – Solidwave Group AG">
+<Base lang={lang} title="Pensionsplanung - Solidwave Group AG">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-20">
     <Breadcrumb crumbs={[{label:'Startseite',href:'/de/'},{label:'Vorsorge',href:'/de/vorsorge/'},{label:'Pensionsplanung'}]} />
-    <div class="max-w-3xl mb-10">
-      <h1 class="text-3xl sm:text-4xl font-bold text-[#0A2647] mb-4">Pensionsplanung – Ihren Ruhestand richtig planen</h1>
-      <p class="text-slate-500 text-lg leading-relaxed">Eine frühzeitige und umfassende Pensionsplanung sorgt dafür, dass Sie Ihren Lebensstandard im Alter halten können.</p>
-    </div>
-    <p class="text-slate-600 leading-relaxed mb-10 max-w-3xl">Die Pensionsplanung umfasst die Analyse und Koordination aller drei Säulen: AHV, Pensionskasse und private Vorsorge. Ziel ist es, Vorsorgelücken frühzeitig zu erkennen und die Bezugsstrategie steuerlich zu optimieren.</p>
-    <div class="mb-10 max-w-3xl">
-      <h2 class="text-xl font-semibold text-[#0A2647] mb-5">Unsere Leistungen</h2>
-      <ul class="space-y-2.5">
-        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Umfassende Pensionsplanung mit allen drei Säulen</li>
-        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Berechnung Ihrer individuellen Vorsorgelücke</li>
-        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Beratung zu Pensionskassen-Einkäufen</li>
-        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Planung der Frühpensionierung</li>
-        <li class="flex items-start gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">✓</span>Optimierung der Bezugsstrategie (Rente vs. Kapital)</li>
+    <div class="max-w-3xl">
+      <h1 class="text-3xl sm:text-4xl font-bold text-[#0A2647] mb-4">Pensionsplanung</h1>
+      <p class="text-slate-500 text-lg mb-8">Frühzeitige Planung sichert Ihren Lebensstandard im Alter.</p>
+      <p class="text-slate-600 mb-8">Die Pensionsplanung umfasst alle drei Säulen: AHV, Pensionskasse und private Vorsorge. Wir begleiten Sie auf dem Weg zu einem sorgenfreien Ruhestand.</p>
+      <ul class="space-y-3">
+        <li class="flex gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">&#10003;</span>Vorsorgelücken-Analyse</li>
+        <li class="flex gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">&#10003;</span>Pensionskassen-Einkauf</li>
+        <li class="flex gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">&#10003;</span>Koordination aller drei Säulen</li>
+        <li class="flex gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">&#10003;</span>Steuereffiziente Bezugsstrategie</li>
+        <li class="flex gap-2 text-slate-600"><span class="text-[#4A7C8C] font-bold">&#10003;</span>Planung der Frühpensionierung</li>
       </ul>
     </div>
   </div>
-  <CtaBanner title="Bereit für eine unabhängige Beratung?" description="Kostenlose und unverbindliche Erstberatung – wir finden die optimale Lösung." buttonLabel="Jetzt Kontakt aufnehmen" buttonHref="/de/kontakt/" />
+  <CtaBanner title="Bereit für eine Beratung?" description="Kostenlos und unverbindlich." buttonLabel="Jetzt Kontakt aufnehmen" buttonHref="/de/kontakt/" />
 </Base>
