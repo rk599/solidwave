@@ -8,323 +8,308 @@ const t = useTranslations(lang);
 
 <Base lang={lang} title="Solidwave Group AG – Ihr unabhängiger Versicherungsbroker in der Schweiz">
 
-  <!-- ═══ HERO ═══ -->
-  <section class="relative overflow-hidden bg-[#0A2647] text-white min-h-[92vh] flex items-center">
-    <div class="absolute inset-0 overflow-hidden" aria-hidden="true">
-      <div class="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[#4A7C8C]/10 blur-3xl"></div>
-      <div class="absolute -bottom-20 -left-20 w-[400px] h-[400px] rounded-full bg-[#4A7C8C]/08 blur-2xl"></div>
-      <svg class="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">
-        <defs><pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-          <path d="M 60 0 L 0 0 0 60" fill="none" stroke="white" stroke-width="1"/>
-        </pattern></defs>
-        <rect width="100%" height="100%" fill="url(#grid)"/>
-      </svg>
+  <!-- ═══════════════════════════════════════════
+       HERO — full-bleed photo, dark overlay
+  ═══════════════════════════════════════════ -->
+  <section class="sw-hero">
+    <div class="sw-hero__bg">
+      <img
+        src="https://images.unsplash.com/photo-1527095341820-8a04e9d43c8b?w=1920&q=85&auto=format&fit=crop"
+        alt="Schweizer Alpen"
+        class="sw-hero__img"
+        loading="eager"
+      />
+      <div class="sw-hero__overlay"></div>
     </div>
 
-    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 sm:py-32 w-full">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <div>
-          <div class="inline-flex items-center gap-2 bg-[#4A7C8C]/20 border border-[#4A7C8C]/30 rounded-full px-4 py-1.5 text-sm text-[#7eb8c8] font-medium mb-6">
-            <span class="w-2 h-2 rounded-full bg-[#4A7C8C] animate-pulse"></span>
-            FINMA-registered Insurance Broker · Zug, Switzerland
-          </div>
-          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.05] mb-6">
-            Insurance that<br/>
-            <span class="text-[#4A7C8C]">fits your</span><br/>
-            life
-          </h1>
-          <p class="text-slate-300 text-xl leading-relaxed mb-10 max-w-lg">
-            We compare independently on your behalf and find the best solution – free of charge and personal.
-          </p>
-          <div class="flex flex-wrap gap-4">
-            <a href="/en/contact/" class="inline-flex items-center gap-2.5 bg-[#4A7C8C] hover:bg-[#5d99ab] text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-[#4A7C8C]/25 hover:-translate-y-0.5">
-              Free Consultation
-              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-            </a>
-            <a href="#services" class="inline-flex items-center gap-2.5 border border-white/20 hover:border-white/50 hover:bg-white/5 text-white font-medium px-8 py-4 rounded-xl transition-all duration-200">
-              Our Services
-              <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
-            </a>
-          </div>
-          <div class="mt-12 flex flex-wrap items-center gap-6 text-sm text-slate-400">
-            <div class="flex items-center gap-2">
-              <svg class="h-5 w-5 text-[#4A7C8C]" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
-              <span>100% independent</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <svg class="h-5 w-5 text-[#4A7C8C]" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25H9m6 3H9m3 6-3-3h1.5a3 3 0 1 0 0-6M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
-              <span>Free advice</span>
-            </div>
-            <div class="flex items-center gap-2">
-              <svg class="h-5 w-5 text-[#4A7C8C]" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
-              <span>50+ insurance partners</span>
-            </div>
-          </div>
-        </div>
+    <div class="sw-hero__content">
+      <div class="sw-hero__badge">
+        <span class="sw-dot"></span>
+        FINMA-registered · Zug, Schweiz
+      </div>
 
-        <!-- Right card -->
-        <div class="hidden lg:block relative">
-          <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-8 shadow-2xl">
-            <div class="flex items-center gap-3 mb-6">
-              <div class="w-10 h-10 rounded-xl bg-[#4A7C8C] flex items-center justify-center">
-                <svg class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
-              </div>
-              <div>
-                <p class="font-semibold text-white">Your personal protection</p>
-                <p class="text-slate-400 text-sm">Tailored for you</p>
-              </div>
-            </div>
-            {[
-              { label: 'Krankenkasse', icon: '🏥', sub: 'Basic & supplementary' },
-              { label: 'Vorsorge', icon: '💰', sub: 'Pillar 3a · 3b · Life insurance' },
-              { label: 'Sachversicherung', icon: '🏠', sub: 'Auto · Household · Liability' },
-            ].map(item => (
-              <div class="flex items-center gap-4 py-3.5 border-t border-white/10">
-                <span class="text-2xl">{item.icon}</span>
-                <div>
-                  <p class="text-white font-medium text-sm">{item.label}</p>
-                  <p class="text-slate-400 text-xs">{item.sub}</p>
-                </div>
-                <svg class="ml-auto h-4 w-4 text-[#4A7C8C]" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
-              </div>
-            ))}
-          </div>
-          <div class="absolute -bottom-5 -left-6 bg-white rounded-2xl shadow-2xl p-4 flex items-center gap-3">
-            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-lg">💡</div>
-            <div>
-              <p class="text-xs text-slate-500">Potential savings</p>
-              <p class="font-bold text-slate-800 text-sm">up to CHF 800/year</p>
-            </div>
-          </div>
-          <div class="absolute -top-4 -right-4 bg-[#4A7C8C] rounded-2xl shadow-xl p-4 text-white text-center">
-            <p class="text-3xl font-bold">50+</p>
-            <p class="text-xs text-[#c5e0e8] mt-0.5">Partner</p>
-          </div>
+      <h1 class="sw-hero__title">
+        Insurance that<br/>
+        <em>die zu Ihrem</em><br/>
+        life.
+      </h1>
+
+      <p class="sw-hero__sub">
+        Independente Beratung von echten Experten –<br class="sw-hide-mobile"/>
+        kostenlos, persönlich und ohne Interessenkonflikte.
+      </p>
+
+      <div class="sw-hero__actions">
+        <a href="/en/contact/" class="sw-btn sw-btn--primary">
+          Free Consultation
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </a>
+        <a href="#services" class="sw-btn sw-btn--ghost">Unsere Leistungen</a>
+      </div>
+
+      <div class="sw-hero__trust">
+        <div class="sw-trust-item">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+          100% independent
+        </div>
+        <div class="sw-trust-sep"></div>
+        <div class="sw-trust-item">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15 8.25H9m6 3H9m3 6-3-3h1.5a3 3 0 1 0 0-6M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+          Free advice
+        </div>
+        <div class="sw-trust-sep"></div>
+        <div class="sw-trust-item">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/></svg>
+          50+ insurance partners
         </div>
       </div>
     </div>
 
-    <div class="absolute bottom-0 left-0 right-0" aria-hidden="true">
-      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full">
-        <path d="M0 60L48 50C96 40 192 20 288 15C384 10 480 20 576 25C672 30 768 30 864 25C960 20 1056 10 1152 10C1248 10 1344 20 1392 25L1440 30V60H0Z" fill="#f8fafc"/>
-      </svg>
+    <!-- scroll indicator -->
+    <div class="sw-hero__scroll" aria-hidden="true">
+      <div class="sw-scroll-line"></div>
     </div>
   </section>
 
-  <!-- ═══ STATS ═══ -->
-  <section class="bg-slate-50 py-10 border-b border-slate-200">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+  <!-- ═══════════════════════════════════════════
+       STATS — animated counters
+  ═══════════════════════════════════════════ -->
+  <section class="sw-stats reveal">
+    <div class="sw-container">
+      <div class="sw-stats__grid">
+        <div class="sw-stat">
+          <span class="sw-stat__num" data-target="100" data-suffix="%">0%</span>
+          <span class="sw-stat__label">Independent von Versicherern</span>
+        </div>
+        <div class="sw-stat sw-stat--accent">
+          <span class="sw-stat__num" data-target="50" data-suffix="+">0+</span>
+          <span class="sw-stat__label">Insurance Partners</span>
+        </div>
+        <div class="sw-stat">
+          <span class="sw-stat__num" data-target="800" data-prefix="CHF " data-suffix="/J.">CHF 0/J.</span>
+          <span class="sw-stat__label">Potential savings pro Jahr</span>
+        </div>
+        <div class="sw-stat">
+          <span class="sw-stat__num" data-target="0" data-prefix="CHF ">CHF 0</span>
+          <span class="sw-stat__label">Free for you</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SERVICES — asymmetric photo + cards
+  ═══════════════════════════════════════════ -->
+  <section id="services" class="sw-services">
+    <div class="sw-container">
+      <div class="sw-section-label reveal">Our Services</div>
+      <h2 class="sw-section-title reveal">Drei Bereiche.<br/><span class="sw-muted">Ein Ziel.</span></h2>
+
+      <div class="sw-services__grid">
+
+        <!-- Photo card -->
+        <div class="sw-services__photo reveal">
+          <img
+            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=85&auto=format&fit=crop&crop=top"
+            alt="Professionelle Beratung"
+            class="sw-photo-fill"
+          />
+          <div class="sw-services__photo-badge">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+            Persönlich &amp; unabhängig
+          </div>
+        </div>
+
+        <!-- Service cards -->
+        <div class="sw-services__cards">
+          <a href="/en/health-insurance/" class="sw-service-card reveal">
+            <div class="sw-service-card__icon">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+            </div>
+            <div class="sw-service-card__body">
+              <h3>Health Insurance</h3>
+              <p>Grundversicherung & Zusatzversicherung – wir finden die günstigste Lösung für Sie.</p>
+              <ul>
+                <li>Grundversicherung</li>
+                <li>Zusatzversicherung</li>
+                <li>Prämienvergleich</li>
+              </ul>
+            </div>
+            <svg class="sw-service-card__arrow" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </a>
+
+          <a href="/en/pension-planning/" class="sw-service-card sw-service-card--dark reveal">
+            <div class="sw-service-card__icon">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/></svg>
+            </div>
+            <div class="sw-service-card__body">
+              <h3>Pension Planning</h3>
+              <p style="color:rgba(255,255,255,0.9)">Pillar 3a, 3b and life insurance – we secure your financial future.</p>
+              <ul>
+                <li>Säule 3a & 3b</li>
+                <li>Lebensversicherung</li>
+                <li>Kinderpläne</li>
+              </ul>
+            </div>
+            <svg class="sw-service-card__arrow" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </a>
+
+          <a href="/en/property-insurance/" class="sw-service-card reveal">
+            <div class="sw-service-card__icon">
+              <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+            </div>
+            <div class="sw-service-card__body">
+              <h3>Property Insurance</h3>
+              <p>Auto, Hausrat, Haftpflicht – rundum geschützt im Alltag.</p>
+              <ul>
+                <li>Autoversicherung</li>
+                <li>Hausrat & Haftpflicht</li>
+                <li>Rechtsschutz</li>
+              </ul>
+            </div>
+            <svg class="sw-service-card__arrow" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       HOW IT WORKS — horizontal timeline
+  ═══════════════════════════════════════════ -->
+  <section class="sw-how">
+    <div class="sw-container">
+      <div class="sw-section-label reveal">How it works</div>
+      <h2 class="sw-section-title reveal">In 3 Schritten zu Ihrer <span class="sw-muted">optimalen Lösung</span></h2>
+
+      <div class="sw-steps">
+        <div class="sw-step reveal">
+          <div class="sw-step__num">01</div>
+          <div class="sw-step__icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V20.25a.75.75 0 0 0 1.28.53l3.58-3.58A48.22 48.22 0 0 0 11.25 17c2.08 0 4.14-.133 6.16-.39"/></svg>
+          </div>
+          <h3>Beratungsgespräch</h3>
+          <p>Wir analysieren Ihre Situation und klären Ihre Bedürfnisse – kostenlos und unverbindlich.</p>
+        </div>
+
+        <div class="sw-step__connector" aria-hidden="true">
+          <svg width="40" height="16" fill="none" viewBox="0 0 40 16"><path d="M0 8h32M26 2l8 6-8 6" stroke="#4A7C8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+
+        <div class="sw-step reveal" style="animation-delay:0.15s">
+          <div class="sw-step__num">02</div>
+          <div class="sw-step__icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/></svg>
+          </div>
+          <h3>Vergleich & Empfehlung</h3>
+          <p>Wir vergleichen 50+ Anbieter und präsentieren Ihnen die beste und günstigste Lösung.</p>
+        </div>
+
+        <div class="sw-step__connector" aria-hidden="true">
+          <svg width="40" height="16" fill="none" viewBox="0 0 40 16"><path d="M0 8h32M26 2l8 6-8 6" stroke="#4A7C8C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+
+        <div class="sw-step reveal" style="animation-delay:0.3s">
+          <div class="sw-step__num">03</div>
+          <div class="sw-step__icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/></svg>
+          </div>
+          <h3>Umsetzung & Betreuung</h3>
+          <p>Wir kümmern uns um den Wechsel und bleiben Ihr persönlicher Ansprechpartner.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       WHY US — full-bleed split with photo
+  ═══════════════════════════════════════════ -->
+  <section class="sw-why">
+    <div class="sw-why__photo">
+      <img
+        src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85&auto=format&fit=crop"
+        alt="Beratungsgespräch Solidwave"
+        class="sw-photo-fill"
+      />
+    </div>
+    <div class="sw-why__content">
+      <div class="sw-section-label sw-section-label--light reveal">Why Solidwave?</div>
+      <h2 class="sw-why__title reveal">Ihr Vorteil:<br/><em>Wir arbeiten nur für Sie.</em></h2>
+      <p class="sw-why__lead reveal">Keine Bindung an Versicherungsgesellschaften. Keine versteckten Interessen. Nur das Beste für Sie.</p>
+
+      <div class="sw-why__points">
         {[
-          { val: '100%', label: 'Unabhängig', icon: '🛡️' },
-          { val: '50+', label: 'Insurance Partners', icon: '🤝' },
-          { val: 'CHF 0', label: 'Free for you', icon: '✅' },
-          { val: 'Zug', label: 'Headquarters Switzerland', icon: '🇨🇭' },
-        ].map(s => (
-          <div class="flex flex-col items-center gap-1">
-            <span class="text-2xl mb-1">{s.icon}</span>
-            <p class="text-3xl font-bold text-[#0A2647]">{s.val}</p>
-            <p class="text-sm text-slate-500">{s.label}</p>
+          { icon: 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z', title: 'Independent', desc: 'An keine Versicherungsgesellschaft gebunden – wir beraten ausschliesslich in Ihrem Interesse.' },
+          { icon: 'M15 8.25H9m6 3H9m3 6-3-3h1.5a3 3 0 1 0 0-6M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z', title: 'Kostenfrei', desc: 'Unsere Beratung ist für Sie 100% kostenlos. Wir werden von den Versicherern vergütet.' },
+          { icon: 'M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z', title: 'Persönlich', desc: 'Kein Callcenter, keine Warteschlangen – immer ein fester Ansprechpartner für Sie.' },
+          { icon: 'M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5', title: 'Transparent', desc: 'Offene Kommunikation über Prämien, Leistungen und Vergütung gemäss VAG Art. 45.' },
+        ].map((item, i) => (
+          <div class="sw-why__point reveal" style={`animation-delay:${i * 0.1}s`}>
+            <div class="sw-why__point-icon">
+              <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d={item.icon}/>
+              </svg>
+            </div>
+            <div>
+              <strong>{item.title}</strong>
+              <p>{item.desc}</p>
+            </div>
           </div>
         ))}
       </div>
+
+      <a href="/en/contact/" class="sw-btn sw-btn--teal reveal" style="animation-delay:0.4s">
+        Jetzt beraten lassen
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+      </a>
     </div>
   </section>
 
-  <!-- ═══ SERVICES ═══ -->
-  <section id="services" class="py-24 bg-slate-50">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <span class="inline-block bg-[#0A2647]/8 text-[#0A2647] text-sm font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">Our Services</span>
-        <h2 class="text-4xl sm:text-5xl font-bold text-[#0A2647] mb-4">Three areas, one goal</h2>
-        <p class="text-slate-500 text-xl max-w-xl mx-auto">Your optimal insurance coverage – independent, free, and personal.</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-        <a href="/en/health-insurance/" class="group relative bg-white rounded-2xl border border-slate-200 p-8 shadow-sm hover:shadow-xl hover:border-[#4A7C8C]/30 transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#4A7C8C]/8 to-transparent rounded-bl-full"></div>
-          <div class="w-14 h-14 rounded-2xl bg-[#0A2647] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-200">
-            <svg class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
-          </div>
-          <h3 class="text-xl font-bold text-[#0A2647] mb-3 group-hover:text-[#4A7C8C] transition-colors">Health Insurance</h3>
-          <p class="text-slate-500 leading-relaxed mb-6">Basic and supplementary insurance compared. We find the plan that fits your needs.</p>
-          <ul class="space-y-2 mb-6">
-            {['Basic Insurance', 'Supplementary Insurance', 'Premium Comparison'].map(item => (
-              <li class="flex items-center gap-2 text-sm text-slate-600">
-                <svg class="h-4 w-4 text-[#4A7C8C] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-                {item}
-              </li>
-            ))}
-          </ul>
-          <div class="flex items-center gap-1 text-[#4A7C8C] font-semibold text-sm group-hover:gap-2 transition-all">
-            Learn more <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-          </div>
-        </a>
-
-        <a href="/en/pension-planning/" class="group relative bg-[#0A2647] rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 overflow-hidden text-white">
-          <div class="absolute top-0 right-0 w-40 h-40 bg-[#4A7C8C]/15 rounded-bl-full"></div>
-          <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-tr-full"></div>
-          <div class="relative">
-            <div class="w-14 h-14 rounded-2xl bg-[#4A7C8C] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-200">
-              <svg class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/></svg>
-            </div>
-            <span class="inline-block bg-[#4A7C8C]/30 text-[#7eb8c8] text-xs font-semibold px-3 py-1 rounded-full mb-3">Recommended</span>
-            <h3 class="text-xl font-bold text-white mb-3">Pension Planning</h3>
-            <p class="text-slate-300 leading-relaxed mb-6">Pillar 3a, Pillar 3b, life insurance, and more. We plan your financial future.</p>
-            <ul class="space-y-2 mb-6">
-              {['Pillar 3a & 3b', 'Life Insurance', 'Risk Insurance', "Children's Plans"].map(item => (
-                <li class="flex items-center gap-2 text-sm text-slate-300">
-                  <svg class="h-4 w-4 text-[#4A7C8C] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <div class="flex items-center gap-1 text-[#4A7C8C] font-semibold text-sm group-hover:gap-2 transition-all">
-              Learn more <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-            </div>
-          </div>
-        </a>
-
-        <a href="/en/property-insurance/" class="group relative bg-white rounded-2xl border border-slate-200 p-8 shadow-sm hover:shadow-xl hover:border-[#4A7C8C]/30 transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#0A2647]/5 to-transparent rounded-bl-full"></div>
-          <div class="w-14 h-14 rounded-2xl bg-[#0A2647] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-200">
-            <svg class="h-7 w-7 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
-          </div>
-          <h3 class="text-xl font-bold text-[#0A2647] mb-3 group-hover:text-[#4A7C8C] transition-colors">Property Insurance</h3>
-          <p class="text-slate-500 leading-relaxed mb-6">Auto, household, liability, and legal protection. Comprehensive everyday coverage.</p>
-          <ul class="space-y-2 mb-6">
-            {['Auto Insurance', 'Household Insurance', 'Liability & Legal Protection'].map(item => (
-              <li class="flex items-center gap-2 text-sm text-slate-600">
-                <svg class="h-4 w-4 text-[#4A7C8C] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
-                {item}
-              </li>
-            ))}
-          </ul>
-          <div class="flex items-center gap-1 text-[#4A7C8C] font-semibold text-sm group-hover:gap-2 transition-all">
-            Learn more <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-          </div>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ WHY US ═══ -->
-  <section class="py-24 bg-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        <div class="relative">
-          <div class="bg-[#0A2647] rounded-3xl p-10 text-white">
-            <h3 class="text-2xl font-bold mb-8">What sets us apart</h3>
-            <div class="space-y-6">
-              {[
-                { pct: '100%', label: 'Independence from insurers', w: '100%', color: '#4A7C8C' },
-                { pct: '98%', label: 'Customer satisfaction', w: '98%', color: '#5d99ab' },
-                { pct: '50+', label: 'Insurance partners compared', w: '85%', color: '#7eb8c8' },
-              ].map(bar => (
-                <div>
-                  <div class="flex justify-between text-sm mb-2">
-                    <span class="text-slate-300">{bar.label}</span>
-                    <span class="font-bold text-white">{bar.pct}</span>
-                  </div>
-                  <div class="h-2 bg-white/10 rounded-full overflow-hidden">
-                    <div class="h-full rounded-full" style={`width:${bar.w};background:${bar.color}`}></div>
-                  </div>
-                </div>
-              ))}
-            </div>
-            <div class="mt-10 flex items-center gap-3 bg-white/10 rounded-xl p-4">
-              <span class="text-3xl">🇨🇭</span>
-              <div>
-                <p class="font-semibold">FINMA-registered</p>
-                <p class="text-slate-400 text-sm">Licensed independent insurance intermediary</p>
-              </div>
-            </div>
-          </div>
-          <div class="absolute -bottom-5 -right-5 bg-white border border-slate-200 rounded-2xl shadow-xl p-5 flex items-center gap-4">
-            <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center text-xl">✅</div>
-            <div>
-              <p class="font-bold text-slate-800">Free for you</p>
-              <p class="text-sm text-slate-500">Compensated by insurers</p>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <span class="inline-block bg-[#0A2647]/8 text-[#0A2647] text-sm font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">Why Solidwave?</span>
-          <h2 class="text-4xl font-bold text-[#0A2647] mb-4">Independent advice.<br/>Personal service.</h2>
-          <p class="text-slate-500 text-lg mb-10 leading-relaxed">We stand for transparency and work exclusively in your interest – with no ties to any insurance company.</p>
-          <div class="space-y-6">
-            {[
-              { icon: 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z', title: 'Unabhängig', desc: 'Wir sind an keine Versicherungsgesellschaft gebunden und beraten ausschliesslich in Ihrem Interesse.' },
-              { icon: 'M15 8.25H9m6 3H9m3 6-3-3h1.5a3 3 0 1 0 0-6M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z', title: 'Kostenfrei', desc: 'Unsere Beratung ist für Sie komplett kostenlos. Wir werden von den Versicherern vergütet.' },
-              { icon: 'M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z', title: 'Persönlich', desc: 'Kein Callcenter, keine Warteschleifen. Sie haben immer einen festen Ansprechpartner.' },
-              { icon: 'M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605', title: 'Transparent', desc: 'Offene Kommunikation über Prämien, Leistungen und unsere Vergütung gemäss VAG Art. 45.' },
-            ].map(item => (
-              <div class="flex gap-4">
-                <div class="w-12 h-12 rounded-xl bg-[#4A7C8C]/10 flex items-center justify-center flex-shrink-0">
-                  <svg class="h-6 w-6 text-[#4A7C8C]" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" d={item.icon}/>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-[#0A2647] mb-1">{item.title}</h4>
-                  <p class="text-slate-500 text-sm leading-relaxed">{item.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ HOW IT WORKS ═══ -->
-  <section class="py-24 bg-slate-50">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <span class="inline-block bg-[#0A2647]/8 text-[#0A2647] text-sm font-semibold px-4 py-1.5 rounded-full mb-4 uppercase tracking-wide">How it works</span>
-        <h2 class="text-4xl sm:text-5xl font-bold text-[#0A2647] mb-4">3 steps to your optimal solution</h2>
-        <p class="text-slate-500 text-xl">Simple, fast, and effortless for you.</p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {[
-          { num: '01', title: 'Beratungsgespräch', desc: 'Wir analysieren gemeinsam Ihre aktuelle Situation und klären Ihre Bedürfnisse – kostenlos und unverbindlich.', icon: 'M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V20.25a.75.75 0 0 0 1.28.53l3.58-3.58A48.22 48.22 0 0 0 11.25 17c2.08 0 4.14-.133 6.16-.39' },
-          { num: '02', title: 'Vergleich & Empfehlung', desc: 'Wir vergleichen Angebote von über 50 Anbietern und präsentieren die beste und günstigste Lösung für Sie.', icon: 'M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z' },
-          { num: '03', title: 'Umsetzung & Betreuung', desc: 'Wir kümmern uns um den Wechsel und stehen Ihnen auch danach als persönlicher Ansprechpartner zur Seite.', icon: 'M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z' },
-        ].map(step => (
-          <div class="relative bg-white rounded-2xl border border-slate-200 p-8 shadow-sm text-center hover:shadow-lg transition-shadow">
-            <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-[#0A2647] mb-6 mx-auto">
-              <svg class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d={step.icon}/></svg>
-            </div>
-            <div class="absolute top-6 right-6 text-6xl font-black text-slate-100 select-none leading-none">{step.num}</div>
-            <h3 class="text-lg font-bold text-[#0A2647] mb-3">{step.title}</h3>
-            <p class="text-slate-500 text-sm leading-relaxed">{step.desc}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ CTA ═══ -->
-  <section class="relative overflow-hidden bg-gradient-to-r from-[#0A2647] to-[#0e3568] text-white py-20">
-    <div class="absolute inset-0 opacity-5" aria-hidden="true">
-      <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
-        <defs><pattern id="dots" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.5" fill="white"/></pattern></defs>
-        <rect width="100%" height="100%" fill="url(#dots)"/>
+  <!-- ═══════════════════════════════════════════
+       QUOTE / TESTIMONIAL
+  ═══════════════════════════════════════════ -->
+  <section class="sw-quote reveal">
+    <div class="sw-container sw-container--narrow">
+      <svg class="sw-quote__mark" width="48" height="36" viewBox="0 0 48 36" fill="none">
+        <path d="M0 36V22C0 9 7.5 2 22.5 0L24 4C17 5.5 13 10 13 16H21V36H0ZM27 36V22C27 9 34.5 2 49.5 0L51 4C44 5.5 40 10 40 16H48V36H27Z" fill="#4A7C8C" fill-opacity="0.25"/>
       </svg>
+      <blockquote class="sw-quote__text">
+        "Versicherungen sind komplex. Unser Ziel ist es, diese Komplexität für unsere Kunden zu beseitigen – und sicherzustellen, dass Sie immer optimal geschützt sind, ohne dafür zu viel zu bezahlen."
+      </blockquote>
+      <div class="sw-quote__author">
+        <div class="sw-quote__avatar">MM</div>
+        <div>
+          <strong>Solidwave Group AG</strong>
+          <span>Zug, Schweiz · FINMA-registered</span>
+        </div>
+      </div>
     </div>
-    <div class="relative mx-auto max-w-3xl px-4 sm:px-6 text-center">
-      <span class="text-4xl mb-4 block">🤝</span>
-      <h2 class="text-3xl sm:text-4xl font-bold mb-4">Ready for independent advice?</h2>
-      <p class="text-slate-300 text-lg mb-8 leading-relaxed">Contact us for a free and non-binding initial consultation. Together, we will find the optimal solution for your insurance needs.</p>
-      <div class="flex flex-wrap justify-center gap-4">
-        <a href="/en/contact/" class="inline-flex items-center gap-2 bg-[#4A7C8C] hover:bg-[#5d99ab] text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:-translate-y-0.5">
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CTA — full-bleed photo
+  ═══════════════════════════════════════════ -->
+  <section class="sw-cta">
+    <div class="sw-cta__bg">
+      <img
+        src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80&auto=format&fit=crop"
+        alt="Zug, Schweiz"
+        class="sw-photo-fill"
+        loading="lazy"
+      />
+      <div class="sw-cta__overlay"></div>
+    </div>
+    <div class="sw-cta__content reveal">
+      <p class="sw-cta__sup">Kostenlos & unverbindlich</p>
+      <h2 class="sw-cta__title">Ready for independent advice?</h2>
+      <p class="sw-cta__desc">Contact us – we respond within 24 hours.</p>
+      <div class="sw-cta__actions">
+        <a href="/en/contact/" class="sw-btn sw-btn--white">
           Get in Touch
-          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
         </a>
-        <a href="mailto:service@solidwave.ch" class="inline-flex items-center gap-2 border border-white/30 hover:border-white/60 text-white font-medium px-8 py-4 rounded-xl transition-all duration-200">
-          <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+        <a href="mailto:service@solidwave.ch" class="sw-btn sw-btn--ghost-white">
           service@solidwave.ch
         </a>
       </div>
@@ -332,3 +317,709 @@ const t = useTranslations(lang);
   </section>
 
 </Base>
+
+<style>
+/* ── Reset / base ─────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Layout helpers ──────────────────────────────────── */
+.sw-container        { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+.sw-container--narrow{ max-width: 780px; margin: 0 auto; padding: 0 1.5rem; }
+.sw-photo-fill       { width: 100%; height: 100%; object-fit: cover; display: block; }
+.sw-hide-mobile      { display: none; }
+@media(min-width:768px){ .sw-hide-mobile { display: inline; } }
+
+/* ── Scroll reveal ───────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ── Dot ─────────────────────────────────────────────── */
+.sw-dot {
+  display: inline-block;
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: #4A7C8C;
+  animation: pulse 2s infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
+
+/* ── Buttons ─────────────────────────────────────────── */
+.sw-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  letter-spacing: 0.01em;
+}
+.sw-btn--primary {
+  background: #4A7C8C;
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(74,124,140,0.35);
+}
+.sw-btn--primary:hover { background: #3d6878; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(74,124,140,0.4); }
+.sw-btn--ghost {
+  border: 1.5px solid rgba(255,255,255,0.35);
+  color: #fff;
+  background: transparent;
+}
+.sw-btn--ghost:hover { border-color: rgba(255,255,255,0.7); background: rgba(255,255,255,0.08); }
+.sw-btn--ghost-white {
+  border: 1.5px solid rgba(255,255,255,0.4);
+  color: #fff;
+  background: transparent;
+}
+.sw-btn--ghost-white:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+.sw-btn--teal {
+  background: #4A7C8C;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(74,124,140,0.3);
+}
+.sw-btn--teal:hover { background: #3d6878; transform: translateY(-2px); }
+.sw-btn--white {
+  background: #fff;
+  color: #0A2647;
+  font-weight: 700;
+}
+.sw-btn--white:hover { background: #f0f4f8; transform: translateY(-2px); }
+
+/* ── Section labels ──────────────────────────────────── */
+.sw-section-label {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #4A7C8C;
+  background: rgba(74,124,140,0.1);
+  padding: 0.35rem 0.9rem;
+  border-radius: 100px;
+  margin-bottom: 1.25rem;
+}
+.sw-section-label--light {
+  background: rgba(255,255,255,0.15);
+  color: #7eb8c8;
+}
+.sw-section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: #0A2647;
+  line-height: 1.1;
+  margin-bottom: 3rem;
+  letter-spacing: -0.02em;
+}
+.sw-muted { color: #94a3b8; }
+
+/* ══════════════════════════════════════════
+   HERO
+══════════════════════════════════════════ */
+.sw-hero {
+  position: relative;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.sw-hero__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.sw-hero__img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  transform: scale(1.05);
+  transition: transform 8s ease;
+}
+.sw-hero:hover .sw-hero__img { transform: scale(1); }
+.sw-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(10,38,71,0.92) 0%,
+    rgba(10,38,71,0.78) 50%,
+    rgba(10,38,71,0.45) 100%
+  );
+}
+.sw-hero__content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 7rem 1.5rem 5rem;
+  width: 100%;
+}
+.sw-hero__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 100px;
+  padding: 0.4rem 1rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  color: #c5e0e8;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+.sw-hero__title {
+  font-size: clamp(2.8rem, 7vw, 5.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.0;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  max-width: 720px;
+}
+.sw-hero__title em {
+  font-style: normal;
+  color: #4A7C8C;
+}
+.sw-hero__sub {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+  max-width: 520px;
+}
+.sw-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3.5rem;
+}
+.sw-hero__trust {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+.sw-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.65);
+}
+.sw-trust-item svg { color: #4A7C8C; flex-shrink: 0; }
+.sw-trust-sep {
+  width: 1px; height: 14px;
+  background: rgba(255,255,255,0.2);
+}
+.sw-hero__scroll {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.sw-scroll-line {
+  width: 1px; height: 60px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.5), transparent);
+  margin: 0 auto;
+  animation: scrollAnim 2s ease-in-out infinite;
+}
+@keyframes scrollAnim { 0%{opacity:1;transform:scaleY(1) translateY(0)} 100%{opacity:0;transform:scaleY(0.5) translateY(20px)} }
+
+/* ══════════════════════════════════════════
+   STATS
+══════════════════════════════════════════ */
+.sw-stats {
+  background: #fff;
+  border-bottom: 1px solid #e8ecf0;
+  padding: 3.5rem 0;
+}
+.sw-stats__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media(min-width: 768px) {
+  .sw-stats__grid { grid-template-columns: repeat(4, 1fr); }
+}
+.sw-stat {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-radius: 16px;
+  transition: background 0.2s;
+}
+.sw-stat:hover { background: #f8fafc; }
+.sw-stat--accent {
+  background: linear-gradient(135deg, #0A2647, #0e3568);
+  border-radius: 16px;
+}
+.sw-stat--accent .sw-stat__num  { color: #fff; }
+.sw-stat--accent .sw-stat__label{ color: rgba(255,255,255,0.6); }
+.sw-stat__num {
+  display: block;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 800;
+  color: #0A2647;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.sw-stat__label {
+  font-size: 0.8rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* ══════════════════════════════════════════
+   SERVICES
+══════════════════════════════════════════ */
+.sw-services {
+  padding: 6rem 0;
+  background: #f8fafc;
+}
+.sw-services__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media(min-width: 900px) {
+  .sw-services__grid {
+    grid-template-columns: 420px 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+}
+.sw-services__photo {
+  position: relative;
+  height: 540px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.sw-services__photo-badge {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  background: rgba(10,38,71,0.9);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.6rem 1.1rem;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+.sw-services__photo-badge svg { color: #4A7C8C; }
+.sw-services__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sw-service-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+.sw-service-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: transparent;
+  border-radius: 3px 0 0 3px;
+  transition: background 0.2s;
+}
+.sw-service-card:hover {
+  border-color: rgba(74,124,140,0.3);
+  box-shadow: 0 8px 30px rgba(10,38,71,0.08);
+  transform: translateX(4px);
+}
+.sw-service-card:hover::before { background: #4A7C8C; }
+.sw-service-card--dark {
+  background: #0A2647;
+  border-color: transparent;
+  box-shadow: 0 8px 30px rgba(10,38,71,0.2);
+}
+.sw-service-card--dark:hover {
+  background: #0e3568;
+  border-color: rgba(74,124,140,0.3);
+  transform: translateX(4px);
+}
+.sw-service-card--dark h3 { color: #fff; }
+.sw-service-card--dark p  { color: rgba(255,255,255,0.6); }
+.sw-service-card--dark li { color: rgba(255,255,255,0.5); }
+.sw-service-card--dark .sw-service-card__icon {
+  background: rgba(74,124,140,0.25);
+  color: #4A7C8C;
+}
+.sw-service-card--dark .sw-service-card__arrow { color: #4A7C8C; }
+.sw-service-card__icon {
+  width: 48px; height: 48px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: rgba(10,38,71,0.06);
+  color: #0A2647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.sw-service-card:hover .sw-service-card__icon {
+  background: rgba(74,124,140,0.12);
+  color: #4A7C8C;
+}
+.sw-service-card__body { flex: 1; }
+.sw-service-card__body h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0A2647;
+  margin-bottom: 0.35rem;
+}
+.sw-service-card__body p {
+  font-size: 0.83rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+.sw-service-card__body ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.sw-service-card__body li {
+  font-size: 0.73rem;
+  color: #4A7C8C;
+  background: rgba(74,124,140,0.08);
+  padding: 0.2rem 0.65rem;
+  border-radius: 100px;
+  font-weight: 600;
+}
+.sw-service-card__arrow {
+  color: #94a3b8;
+  flex-shrink: 0;
+  margin-top: 2px;
+  transition: color 0.2s, transform 0.2s;
+}
+.sw-service-card:hover .sw-service-card__arrow {
+  color: #4A7C8C;
+  transform: translateX(3px);
+}
+
+/* ══════════════════════════════════════════
+   HOW IT WORKS
+══════════════════════════════════════════ */
+.sw-how {
+  padding: 6rem 0;
+  background: #fff;
+}
+.sw-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: stretch;
+}
+@media(min-width: 768px) {
+  .sw-steps {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+}
+.sw-step {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  position: relative;
+  transition: all 0.25s ease;
+}
+.sw-step:hover {
+  border-color: rgba(74,124,140,0.3);
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(10,38,71,0.08);
+  transform: translateY(-4px);
+}
+.sw-step__num {
+  font-size: 4rem;
+  font-weight: 900;
+  color: rgba(10,38,71,0.07);
+  line-height: 1;
+  position: absolute;
+  top: 1rem; right: 1.25rem;
+  letter-spacing: -0.04em;
+  pointer-events: none;
+  user-select: none;
+}
+.sw-step__icon {
+  width: 56px; height: 56px;
+  border-radius: 14px;
+  background: #0A2647;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.sw-step h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0A2647;
+  margin-bottom: 0.5rem;
+}
+.sw-step p {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+.sw-step__connector {
+  display: none;
+  flex-shrink: 0;
+  padding: 0 0.75rem;
+}
+@media(min-width: 768px) {
+  .sw-step__connector { display: flex; align-items: center; }
+}
+
+/* ══════════════════════════════════════════
+   WHY US — split photo
+══════════════════════════════════════════ */
+.sw-why {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 600px;
+}
+@media(min-width: 900px) {
+  .sw-why { grid-template-columns: 1fr 1fr; }
+}
+.sw-why__photo {
+  position: relative;
+  min-height: 400px;
+  overflow: hidden;
+}
+@media(min-width: 900px) {
+  .sw-why__photo { min-height: unset; }
+}
+.sw-why__content {
+  background: #0A2647;
+  padding: 5rem 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media(min-width: 1200px) { .sw-why__content { padding: 6rem 5rem; } }
+.sw-why__title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+.sw-why__title em {
+  font-style: normal;
+  color: #4A7C8C;
+}
+.sw-why__lead {
+  color: rgba(255,255,255,0.6);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2.5rem;
+}
+.sw-why__points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.sw-why__point {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.sw-why__point-icon {
+  width: 40px; height: 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(74,124,140,0.2);
+  color: #4A7C8C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sw-why__point strong {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+.sw-why__point p {
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+}
+
+/* ══════════════════════════════════════════
+   QUOTE
+══════════════════════════════════════════ */
+.sw-quote {
+  padding: 6rem 0;
+  background: #f8fafc;
+  text-align: center;
+}
+.sw-quote__mark {
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+.sw-quote__text {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 500;
+  color: #0A2647;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sw-quote__author {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sw-quote__avatar {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: #0A2647;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sw-quote__author strong { display: block; font-size: 0.9rem; color: #0A2647; }
+.sw-quote__author span  { font-size: 0.78rem; color: #64748b; }
+
+/* ══════════════════════════════════════════
+   CTA
+══════════════════════════════════════════ */
+.sw-cta {
+  position: relative;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.sw-cta__bg {
+  position: absolute;
+  inset: 0;
+}
+.sw-cta__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(10,38,71,0.93) 0%,
+    rgba(10,38,71,0.75) 60%,
+    rgba(10,38,71,0.5) 100%
+  );
+}
+.sw-cta__content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  width: 100%;
+}
+.sw-cta__sup {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #4A7C8C;
+  margin-bottom: 1rem;
+}
+.sw-cta__title {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  max-width: 600px;
+}
+.sw-cta__desc {
+  color: rgba(255,255,255,0.65);
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+}
+.sw-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+</style>
+
+<script>
+/* ── Scroll reveal ─────────────────────────────── */
+const observer = new IntersectionObserver(
+  (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } }),
+  { threshold: 0.12 }
+);
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+/* ── Animated counters ─────────────────────────── */
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target, 10);
+  const prefix = el.dataset.prefix || '';
+  const suffix = el.dataset.suffix || '';
+  const duration = 1800;
+  const start = performance.now();
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+
+  function update(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const val = Math.round(easeOut(progress) * target);
+    el.textContent = prefix + val + suffix;
+    if (progress < 1) requestAnimationFrame(update);
+  }
+  requestAnimationFrame(update);
+}
+
+const counterObserver = new IntersectionObserver(
+  (entries) => entries.forEach(e => {
+    if (e.isIntersecting) {
+      animateCounter(e.target);
+      counterObserver.unobserve(e.target);
+    }
+  }),
+  { threshold: 0.5 }
+);
+document.querySelectorAll('[data-target]').forEach(el => counterObserver.observe(el));
+</script>
