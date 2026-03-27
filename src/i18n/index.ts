@@ -155,6 +155,8 @@ export function getServiceLinks(lang: Lang) {
       { href: '/en/pension-planning/life-insurance/', key: 'Life Insurance' },
       { href: '/en/pension-planning/risk-insurance/', key: 'Risk Insurance' },
       { href: '/en/pension-planning/childrens-plans/', key: "Children's Plans" },
+      { href: '/en/pension-planning/vested-benefits/', key: 'Vested Benefits' },
+      { href: '/en/pension-planning/pension-consulting/', key: 'Pension Consulting' },
     ],
     property: '/en/property-insurance/',
     propertySubs: [
